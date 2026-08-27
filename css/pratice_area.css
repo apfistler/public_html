@@ -95,6 +95,7 @@
  */
 
 .practice-card__content {
+  text-align: center;
   width: 100%;
   min-height: 260px;
 
