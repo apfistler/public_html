@@ -1,0 +1,187 @@
+#menu_control {
+  position: absolute;
+  background-color: #CC5500;
+  top: 10px;
+  left: 120px;
+  z-index: 2;
+}
+
+//#menu {
+//  transition: transform 0s; /* Add this line */
+//  transform-origin: 50% 50%;
+//}
+
+.menu {
+  top: -35px;
+  background-color: #CC5500;
+  color: #ffffff;
+  border-radius: 20px;
+  width: 210px;
+  margin-top: 40px; /* Add margin-top to create space for #menu_control */
+  padding: 5px;
+  padding-top: 60px;
+  position: relative; /* Set to relative for proper positioning of absolute elements inside it */
+  z-index: 1; /* Set z-index to 1 to position it behind #menu_control */
+  font-size: 12pt;
+  font-weight: 700;
+//  font-family: 'Oleo Script', cursive;
+}
+
+.menu nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#menu_control ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  color: #000000;
+  background-color: #FF8833;
+  padding: 10px 20px;
+  margin: 10px;
+  width: 150px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2),
+              0 0 5px 1px rgba(255, 255, 255, 0.5); /* Lighter color border */
+  font-size: 12pt;
+}
+
+.menu-item.child {
+  background-color: #006699;
+  color: #FFFFFF;
+  position: relative;
+  left: 10px;
+  width: 130px;
+}
+
+.menu-item.child:hover {
+  background-color: #004d42;
+  color: #FFFFFF;
+}
+
+.menu-item.parent:active {
+  background-color: #A3396c;
+}
+
+
+.menu-control-item {
+  color: #ffffff;
+  background-color: #FF8833;
+  width: 30px;
+  height: 30px;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2),
+              0 0 5px 1px rgba(255, 255, 255, 0.5); /* Lighter color border */
+  font-size: 11pt;
+}
+
+.menu-item#menu_visibility {
+  list-style: none; /* This removes the bullet point */
+}
+
+
+.menu-item:hover {
+  background-color: #E06633;
+}
+
+.menu-item:active {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  top: 2px;
+  left: 2px;
+}
+
+.menu-item:active {
+  background-color: #7d4b83;
+  color: #ffffff;
+}
+
+.menu-item.selected {
+  background-color: #7d4b83;
+  color: #ffffff;
+}
+
+.hamburger-icon {
+  font-size: 24pt;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.close-icon {
+  display: none;
+  font-size: 20pt;
+  color: red;
+  margin-left: 5px;
+  vertical-align: top;
+  position: absolute;
+  top: 15px;
+}
+
+.menu.visible .close-icon {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-width: 1280px) {
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    height: 75px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2),
+                0 0 15px 4px rgba(255, 255, 255, 0.5); /* Lighter color border */
+    margin-bottom: 30px;
+    font-size: 20pt;
+    background-color: #CC5500;
+  }
+
+  .menu-control-item {
+     width: 80px;
+     height: 80px;
+  }
+  
+  .close-icon {
+//    display: flex;
+    position: absolute;
+    top: 5px;
+    align-items: center;
+    justify-items: center;
+    font-size: 58pt;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 58pt;
+  }
+
+  .menu {
+    padding-top: 120px;
+    display: none;
+  }
+
+  #menu_control {
+    left: 70px;
+    top: 5px;
+  }
+
+}
