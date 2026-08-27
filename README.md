@@ -1,6 +1,6 @@
 # Adam Fistler — Website
 
-This repository is a public backup of the website files used by **Adam Fistler Services**.
+This repository is a public backup of the website files used by **Adam Fistler - Mind, Meaning & Transformation**.
 
 The site contains information and resources covering:
 
@@ -27,7 +27,7 @@ The repository contains the site's HTML, CSS, JavaScript, images, SVG artwork, c
 
 ## Site
 
-**Adam Fistler Services**
+**Adam Fistler - Mind, Meaning & Transformation **
 
 https://www.adamfistler.com/
 
