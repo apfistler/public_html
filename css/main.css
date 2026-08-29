@@ -79,3 +79,15 @@ strong {
   
 }
 
+/* Ensure base link style */
+a.area_pages {
+  text-decoration: underline; /* Or whatever your base link style is */
+}
+
+/* Strip underline from the active indicator arrow positioned before text */
+a.area_pages span.active-arrow {
+  display: inline-block;
+  text-decoration: none !important;
+  margin-right: 0.4em; /* Spacing between arrow and link text */
+  font-family: initial; /* Ensures clean unicode rendering */
+}

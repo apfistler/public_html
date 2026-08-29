@@ -214,7 +214,7 @@ function init() {
    * ==========================================================
    */
 
-  function hideMenu() {
+  function hideMenu(saveState = false) {
 
     if (!menu || !content) {
       return;
@@ -255,6 +255,11 @@ function init() {
 
     document.body.classList.remove("visible");
 
+
+    if (saveState) {
+      localStorage.setItem("menuState", "collapsed");
+    }
+
   };
 
 
@@ -264,7 +269,7 @@ function init() {
    * ==========================================================
    */
 
-  function showMenu() {
+  function showMenu(saveState = false) {
 
     if (!menu || !content) {
       return;
@@ -306,6 +311,11 @@ function init() {
 
     document.body.classList.add("visible");
 
+
+    if (saveState) {
+      localStorage.setItem("menuState", "expanded");
+    }
+
   };
 
 
@@ -317,13 +327,29 @@ function init() {
 
   function handleViewportChange() {
 
-    if (window.innerWidth < 1280) {
+    const savedState =
+      localStorage.getItem("menuState");
 
-      hideMenu();
+
+    if (savedState === "collapsed") {
+
+      hideMenu(false);
+
+    } else if (savedState === "expanded") {
+
+      showMenu(false);
 
     } else {
 
-      showMenu();
+      if (window.innerWidth < 1280) {
+
+        hideMenu(false);
+
+      } else {
+
+        showMenu(false);
+
+      }
 
     }
 
@@ -351,9 +377,16 @@ function init() {
     "resize",
     function () {
 
-      if (window.innerWidth < 1280) {
+      const savedState =
+        localStorage.getItem("menuState");
 
-        hideMenu();
+
+      if (
+        savedState === "collapsed" ||
+        (window.innerWidth < 1280 && !savedState)
+      ) {
+
+        hideMenu(false);
 
       } else if (
         menu &&
@@ -390,11 +423,11 @@ function init() {
           menu.style.display === ""
         ) {
 
-          showMenu();
+          showMenu(true);
 
         } else {
 
-          hideMenu();
+          hideMenu(true);
 
         }
 
@@ -443,3 +476,53 @@ document.addEventListener(
   "DOMContentLoaded",
   init
 );
+
+/* Add Arrow to Link Lables in Area Page links */
+
+function highlightActiveAreaPages() {
+  const currentPath = window.location.pathname;
+  const currentHash = window.location.hash;
+
+  // Select all links with class area_pages
+  const areaLinks = document.querySelectorAll('a.area_pages');
+
+  areaLinks.forEach((link) => {
+    // Clean up any existing arrows first
+    const existingArrow = link.querySelector('.active-arrow');
+    if (existingArrow) {
+      existingArrow.remove();
+    }
+
+    const href = link.getAttribute('href');
+    if (!href) return;
+
+    // Parse link href relative to current domain
+    const linkUrl = new URL(href, window.location.origin);
+
+    // Check if pathname matches
+    const matchesPath = linkUrl.pathname === currentPath;
+
+    // Check hash: match if link hash equals current hash, OR if link has no hash
+    const matchesHash = linkUrl.hash ? linkUrl.hash === currentHash : true;
+
+    if (matchesPath && matchesHash) {
+      link.classList.add('active');
+
+      // Create arrow span
+      const arrowSpan = document.createElement('span');
+      arrowSpan.className = 'active-arrow';
+      arrowSpan.innerHTML = '&#8594;'; // Unicode right arrow (→)
+
+      // Insert arrow BEFORE the link text
+      link.prepend(arrowSpan);
+    } else {
+      link.classList.remove('active');
+    }
+  });
+}
+
+// Run on initial page load
+document.addEventListener('DOMContentLoaded', highlightActiveAreaPages);
+
+// Also re-run if URL hash changes without a full page reload
+window.addEventListener('hashchange', highlightActiveAreaPages);
