@@ -523,7 +523,8 @@ function highlightActiveAreaPages() {
       // Create arrow span
       const arrowSpan = document.createElement('span');
       arrowSpan.className = 'active-arrow';
-      arrowSpan.innerHTML = '&#8594; '; // Unicode right arrow (→)
+      //arrowSpan.innerHTML = '&#8594; '; // Unicode right arrow (→)
+      arrowSpan.innerHTML = '&#x2937;'; // Unicode right arrow (→)
 
       // Insert arrow BEFORE the link text
       link.prepend(arrowSpan);
