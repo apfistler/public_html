@@ -479,9 +479,27 @@ document.addEventListener(
 
 /* Add Arrow to Link Lables in Area Page links */
 
+/* Add Arrow to Link Labels in Area Page links */
+
 function highlightActiveAreaPages() {
-  const currentPath = window.location.pathname;
-  const currentHash = window.location.hash;
+  // Helper function to extract base file path up through .html (stripping hashes, parameters, etc.)
+  function cleanPath(urlStr) {
+    try {
+      const url = new URL(urlStr, window.location.origin);
+      let path = url.pathname;
+      
+      // Look for .html in the path and strip anything following it
+      const htmlIndex = path.toLowerCase().indexOf('.html');
+      if (htmlIndex !== -1) {
+        path = path.substring(0, htmlIndex + 5); // Includes '.html'
+      }
+      return path;
+    } catch (e) {
+      return '';
+    }
+  }
+
+  const currentCleanPath = cleanPath(window.location.href);
 
   // Select all links with class area_pages
   const areaLinks = document.querySelectorAll('a.area_pages');
@@ -496,22 +514,16 @@ function highlightActiveAreaPages() {
     const href = link.getAttribute('href');
     if (!href) return;
 
-    // Parse link href relative to current domain
-    const linkUrl = new URL(href, window.location.origin);
+    const linkCleanPath = cleanPath(href);
 
-    // Check if pathname matches
-    const matchesPath = linkUrl.pathname === currentPath;
-
-    // Check hash: match if link hash equals current hash, OR if link has no hash
-    const matchesHash = linkUrl.hash ? linkUrl.hash === currentHash : true;
-
-    if (matchesPath && matchesHash) {
+    // Compare paths up to .html
+    if (linkCleanPath && linkCleanPath === currentCleanPath) {
       link.classList.add('active');
 
       // Create arrow span
       const arrowSpan = document.createElement('span');
       arrowSpan.className = 'active-arrow';
-      arrowSpan.innerHTML = '&#8594;'; // Unicode right arrow (→)
+      arrowSpan.innerHTML = '&#8594; '; // Unicode right arrow (→)
 
       // Insert arrow BEFORE the link text
       link.prepend(arrowSpan);
