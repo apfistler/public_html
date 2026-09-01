@@ -7,16 +7,13 @@
     <loc>https://www.adamfistler.com/html/adam/addiction_development.html</loc>
   </url>
   <url>
-    <loc>https://www.adamfistler.com/html/adam/celeberties.html</loc>
-  </url>
-  <url>
-    <loc>https://www.adamfistler.com/html/adam/celebrities.html</loc>
-  </url>
-  <url>
     <loc>https://www.adamfistler.com/html/adam/early_childhood.html</loc>
   </url>
   <url>
     <loc>https://www.adamfistler.com/html/adam/landing.html</loc>
+  </url>
+  <url>
+    <loc>https://www.adamfistler.com/html/adam/reclaim.html</loc>
   </url>
   <url>
     <loc>https://www.adamfistler.com/html/adam/recovery.html</loc>
@@ -26,6 +23,9 @@
   </url>
   <url>
     <loc>https://www.adamfistler.com/html/addiction/addiction_services.html</loc>
+  </url>
+  <url>
+    <loc>https://www.adamfistler.com/html/addiction/celebrities.html</loc>
   </url>
   <url>
     <loc>https://www.adamfistler.com/html/addiction/landing.html</loc>
@@ -121,6 +121,18 @@
     <loc>https://www.adamfistler.com/html/groups/landing.html</loc>
   </url>
   <url>
+    <loc>https://www.adamfistler.com/html/groups/resources/forgiveness.html</loc>
+  </url>
+  <url>
+    <loc>https://www.adamfistler.com/html/groups/resources/meditation.html</loc>
+  </url>
+  <url>
+    <loc>https://www.adamfistler.com/html/groups/resources/resources.html</loc>
+  </url>
+  <url>
+    <loc>https://www.adamfistler.com/html/groups/resources/self_talk.html</loc>
+  </url>
+  <url>
     <loc>https://www.adamfistler.com/html/groups/upcoming_events.html</loc>
   </url>
   <url>
@@ -142,9 +154,6 @@
     <loc>https://www.adamfistler.com/html/hypnosis/landing.html</loc>
   </url>
   <url>
-    <loc>https://www.adamfistler.com/html/hypnosis/smoking_cessation_approach.html</loc>
-  </url>
-  <url>
     <loc>https://www.adamfistler.com/html/hypnosis/smoking_cessation.html</loc>
   </url>
   <url>
@@ -152,9 +161,6 @@
   </url>
   <url>
     <loc>https://www.adamfistler.com/html/hypnosis/wcic.html</loc>
-  </url>
-  <url>
-    <loc>https://www.adamfistler.com/html/hypnosis/weight_loss_approach.html</loc>
   </url>
   <url>
     <loc>https://www.adamfistler.com/html/hypnosis/weight_loss.html</loc>
