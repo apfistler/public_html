@@ -3,10 +3,10 @@
    ========================================================== */
 
 .breadcrumb {
-  text-align: center;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Centers flex items horizontally */
   align-items: center;
   list-style: none;
   margin: 0 auto;
