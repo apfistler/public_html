@@ -2,13 +2,115 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "ProfessionalService"],
       "@id": "https://www.adamfistler.com/#localbusiness",
-      "name": "Adam Fistler - Behavioral Change Consulting",
+      "name": "Adam Fistler - Behavioral Change & Technology Consulting",
       "url": "https://www.adamfistler.com",
       "image": "https://www.adamfistler.com/img/main/home/adam_fistler_transparent_web.png",
-      "description": "Behavioral change consulting, hypnosis, mindfulness, and alternative addiction & recovery services serving South Jersey and the Philadelphia area.",
+      "description": "Behavioral change consulting, hypnosis, mindfulness, alternative addiction recovery, and custom software & systems automation consulting serving South Jersey and Philadelphia.",
       "email": "adam@adamfistler.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lindenwold",
+        "addressRegion": "NJ",
+        "postalCode": "08021",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "description": "By Appointment Only"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services & Educational Offerings",
+        "itemListElement": [
+          {
+            "@type": "Service",
+            "name": "Individual Hypnosis Sessions",
+            "description": "One-on-one hypnosis sessions utilizing 5-PATH, age regression, parts therapy, and direct suggestion for targeted behavioral change and personal growth.",
+            "provider": {
+              "@id": "https://www.adamfistler.com/#localbusiness"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Personalized Peer Recovery Coaching",
+            "description": "Individual recovery support and coaching focused on non-12-step evidence-based frameworks, SMART recovery tools, and addiction neurochemistry insights.",
+            "provider": {
+              "@id": "https://www.adamfistler.com/#localbusiness"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Personal Birth Chart Readings",
+            "description": "In-depth individual astrological consultations interpreting natal charts, core psychological drives, and symbolic self-discovery.",
+            "provider": {
+              "@id": "https://www.adamfistler.com/#localbusiness"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Handwriting Analysis Consultation",
+            "description": "Individual graphology consultations analyzing handwriting traits for insights into personality, behavioral tendencies, and personal growth opportunities.",
+            "provider": {
+              "@id": "https://www.adamfistler.com/#localbusiness"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Hypnosis & Trance Formation Workshop",
+            "description": "Interactive workshop covering direct suggestion, subconscious re-patterning, and practical trance states for personal transformation.",
+            "provider": {
+              "@id": "https://www.adamfistler.com/#localbusiness"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Mindfulness & Meditation Practice",
+            "description": "Guided instruction in mindfulness meditation techniques, visualization, and practical strategies for stress reduction and mental clarity.",
+            "provider": {
+              "@id": "https://www.adamfistler.com/#localbusiness"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Addiction Neurochemistry & Evidence-Based Recovery",
+            "description": "Educational training exploring the biology of addiction, neurochemistry, and non-12-step alternative approaches to recovery.",
+            "provider": {
+              "@id": "https://www.adamfistler.com/#localbusiness"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Applied Astrology & Birth Chart Analysis",
+            "description": "Workshop covering foundational and practical astrological concepts, birth chart interpretation, and symbolic self-discovery.",
+            "provider": {
+              "@id": "https://www.adamfistler.com/#localbusiness"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Systems Automation & Technology Consulting",
+            "description": "Technical workshop focused on Linux administration, shell scripting, DevOps workflows, and custom software automation.",
+            "provider": {
+              "@id": "https://www.adamfistler.com/#localbusiness"
+            }
+          }
+        ]
+      },
+      "founder": {
+        "@id": "https://www.adamfistler.com/#person"
+      },
       "areaServed": [
         {
           "@type": "AdministrativeArea",
@@ -35,13 +137,14 @@
           "name": "Atlantic County"
         },
         {
-          "@type": "AdministrativeArea",
-          "name": "Lindenwold, NJ"
+          "@type": "City",
+          "name": "Lindenwold",
+          "sameAs": "https://en.wikipedia.org/wiki/Lindenwold,_New_Jersey"
         }
       ],
       "knowsAbout": [
         "Hypnosis",
-        "5-PATH Hypnotherapy",
+        "5-PATH Hypnosisy",
         "Addiction and Recovery Education",
         "Recovery Beyond 12 Step",
         "Addiction Neurochemistry",
@@ -49,23 +152,130 @@
         "Mindfulness and Meditation",
         "Handwriting Analysis",
         "Astrology",
+        "DevOps",
         "Systems Engineering",
+        "Software Automation",
+        "Linux Systems Administration",
         "Public Speaking",
-        "Group Education",
-        "Parties & Events"
+        "Group Education"
       ]
     },
     {
       "@type": "Person",
       "@id": "https://www.adamfistler.com/#person",
       "name": "Adam Fistler",
-      "jobTitle": "Behavioral Change Consultant & Hypnotist",
+      "jobTitle": "Behavioral Change Consultant, Hypnotist & Systems Engineer",
       "worksFor": {
         "@id": "https://www.adamfistler.com/#localbusiness"
       },
-      "sameAs": [
-        "https://www.ngh.net",
-        "https://www.hypnosiscenter.com"
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certification",
+          "name": "Board Certified Hypnotist",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "National Guild of Hypnotists",
+            "url": "https://www.ngh.net"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certification",
+          "name": "Competent Communicator",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Toastmasters International",
+            "url": "https://www.toastmasters.org"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Training",
+          "name": "5-PATH Hypnosis Training",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Banyan Hypnosis Center",
+            "url": "https://www.hypnosiscenter.com"
+          }
+        }
+      ],
+      "knowsAbout": [
+        "Linux",
+        "Unix",
+        "SunOS",
+        "HP-UX",
+        "Red Hat Enterprise Linux",
+        "Ubuntu",
+        "CentOS",
+        "Python",
+        "C Programming Language",
+        "x86 Assembly",
+        "Ruby",
+        "Perl",
+        "Bash Scripting",
+        "PowerShell",
+        "C# .NET",
+        "Puppet",
+        "Git",
+        "DevOps",
+        "CI/CD",
+        "REST APIs",
+        "SQL",
+        "MySQL",
+        "Oracle Database",
+        "WWIV BBS",
+        "SysOp Administration",
+        "Hypnosis",
+        "Direct Suggestion",
+        "Age Regression",
+        "Parts Therapy",
+        "Hypnosis for Addiction",
+        "Addiction Recovery",
+        "Alternative methods to 12 Step",
+        "Mindfulness Meditation",
+        "Handwriting Analysis",
+        "Astrology",
+        "Addiction Education",
+        "Addiction Research",
+        "Addiction Evidence Based Approaches",
+        "Substance Use Disorder",
+        "Substance Abuse",
+        "Behavioral Change",
+        "Personal Transformation",
+        "Personal Growth",
+        "Belief Systems",
+        "Biology of Addiction",
+        "Neurochemistry of Addiction",
+        "Trance Formation of Addictions",
+        "Guided Meditation",
+        "Visualization",
+        "Meditation Workshops",
+        "Workshops",
+        "Parties",
+        "Events"
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "National Guild of Hypnostists",
+          "url": "https://www.ngh.net"
+        },
+        {
+          "@type": "Organization",
+          "name": "Banyan Hypnosis Center",
+          "url": "https://www.hypnosiscenter.com"
+        },
+        {
+          "@type": "Organization",
+          "name": "Toastmasters International",
+          "url": "https://www.toastmasters.org"
+        },
+        {
+          "@type": "Organization",
+          "name": "SMART Recovery",
+          "url": "https://smartrecovery.org/"
+        }
       ]
     }
   ]

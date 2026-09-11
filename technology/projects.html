@@ -20,6 +20,7 @@
      <link href="/css/form.css" rel="stylesheet" type="text/css"/>
      <link href="/css/breadcrumb.css" rel="stylesheet" type="text/css"/>
      <link href="/css/groups.css" rel="stylesheet" type="text/css"/>
+     <link href="/css/code_block.css" rel="stylesheet" type="text/css"/>
      <link href="/css/technology/projects.css" rel="stylesheet"/>
      <link href="https://fonts.googleapis.com/css2?family=Brush+Script" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet"/>
@@ -27,7 +28,7 @@
       <meta content="Adam Fistler" name="authors"/>
       <meta content="en" http-equiv="Content-Language"/>
       <meta content="7 days" name="revisit-after"/>
-      <meta content=".net, 08001, 08002, 08004, 08007, 08009, 08010, 08012, 08014, 08016, 08018, 08019, 08020, 08021, 08022, 08027, 08028, 08029, 08030, 08031, 08033, 08035, 08037, 08043, 08046, 08048, 08049, 08051, 08053, 08054, 08055, 08056, 08057, 08060, 08062, 08063, 08064, 08065, 08066, 08068, 08069, 08070, 08071, 08074, 08075, 08077, 08078, 08079, 08080, 08081, 08083, 08085, 08086, 08088, 08089, 08090, 08093, 08094, 08095, 08096, 08097, 08098, 08102, 08106, 08108, 08109, 08110, 08201, 08215, 08234, 08302, 08312, 08318, 08322, 08332, 08360, 08401, 08505, 08518, 08608, 18901, 18940, 19002, 19003, 19004, 19007, 19008, 19010, 19013, 19020, 19021, 19023, 19026, 19027, 19030, 19036, 19046, 19047, 19050, 19054, 19063, 19064, 19067, 19082, 19083, 19087, 19102, 19380, 19401, 19406, 19428, 19444, 19462, 19720, 19801, Absecon, Addiction, Alloway, Ambler, Ardmore, Astrology, Atco, Atlantic City, Audubon, Bala Cynwyd, Barrington, Bellmawr, Bensalem, Berlin, Beverly, Birth Chart, Birth Chart Reading, Blackwood, Bordentown, Bridgeport, Bridgeton, Bristol, Broomall, Bryn Mawr, Burlington, Camden, Cedar Brook, Chatsworth, Cherry Hill, Chesilhurst, Chester, Clarksboro, Clayton, Clementon, Collingswood, Columbus, Conshohocken, Croydon, Darby, Delran, Deptford, Doylestown, Drexel Hill, Egg Harbor City, Egg Harbor Township, Elkins Park, Elmer, Fairless Hills, Florence, Franklinville, Gibbstown, Glassboro, Glendora, Glenolden, Gloucester City, Haddon Heights, Haddonfield, Hammonton, Handwriting Analysis, Havertown, Hypnosis, Hypnotism, Hypnotist, Jenkintown, King of Prussia, Lafayette Hill, Lansdowne, Levittown, Lindenwold, Lumberton, Magnolia, Mantua, Marlton, Medford, Media, Merchantville, Mickleton, Millville, Moorestown, Morrisville, Mount Holly, Mount Laurel, Mullica Hill, Natal Chart, Natal Chart Reading, National Park, New Castle, New Jersey, New Lisbon, Newtown, Norristown, Palmyra, Paulsboro, Pemberton, Penndel, Penns Grove, Pennsauken, Pennsville, Philadelphia, Pine Hill, Pitman, Plymouth Meeting, Power Shell, Red Hat, Red Hat Enterprise Linux, Richwood, Riverside, Riverton, Runnemede, Salem, Sewell, Sicklerville, Somerdale, South Jersey, Southampton, Springfield, Substance Abuse, Swedesboro, Technology, Thorofare, Trenton, Upper Darby, Vineland, Voorhees, Wayne, Wenonah, West Chester, Westville, Williamstown, Willingboro, Wilmington, Winslow, Woodbury, Woodbury Heights, Woodstown, Zodiac, addiction, addiction hypnosis, bash, better than 12 step, better than twelve step, c#, centos, devops, different than 12 step, different than twelve step, hypnosis, hypnosis for addiction, hypnosis for recovery, hypnotist, linux, perl, powershell, projects, python, recovery, recovery hypnosis, redhat, rhel, ruby, script, smart recovery, something else besides 12 step, something else besides twleve step, ubuntu" name="keywords"/>
+      <meta content=".net, Addiction, Astrology, Birth Chart, Birth Chart Reading, Handwriting Analysis, Hypnosis, Hypnotism, Hypnotist, Natal Chart, Natal Chart Reading, New Jersey, Philadelphia, Power Shell, Red Hat, Red Hat Enterprise Linux, South Jersey, Substance Abuse, Technology, Zodiac, addiction, addiction hypnosis, bash, better than 12 step, better than twelve step, c#, centos, devops, different than 12 step, different than twelve step, hypnosis, hypnosis for addiction, hypnosis for recovery, hypnotist, linux, perl, powershell, projects, python, recovery, recovery hypnosis, redhat, rhel, ruby, script, smart recovery, something else besides 12 step, something else besides twleve step, ubuntu" name="keywords"/>
       <meta robots="index, follow"/>
       <script src="/js/main.js" type="text/javascript">
       </script>
@@ -64,7 +65,7 @@
       <nav>
        <ul>
         <li>
-         <a class="menu-item" href="/main/home.html">
+         <a class="menu-item" href="/index.html">
           Home
          </a>
         </li>
@@ -271,6 +272,11 @@
            </a>
           </li>
           <li>
+           <a class="menu-item child" href="/articles/technology/articles.html#technology">
+            Articles
+           </a>
+          </li>
+          <li>
            <a class="menu-item child" href="/technology/resume.html#technology">
             Resume
            </a>
@@ -317,7 +323,7 @@
          </ul>
         </li>
         <li>
-         <a class="menu-item" href="/main/contact_adam.html">
+         <a class="menu-item" href="/contact_adam.html">
           Contact Adam
          </a>
         </li>
@@ -576,7 +582,75 @@
        Currently, I am enhancing TxFX to handle a configuration file, defining the configuration data for desired applications. The ongoing modification aims to make the installation process more generic, accommodating various applications through '.exe' installers or '.zip' files that can be extracted locally. This approach allows for easy additions to the config file for installing other applications. Below is an example of the configuration file structure:
       </p>
       <div class="code-block">
-       <pre>            <code>        project_dir:  "${env:USERPROFILE}/txfx"        download_dir: "%{project_dir}/downloads"        package_dir:  "%{project_dir}/packages"                packages:          git:          arch:            32bit: '32-bit'            64bit: '64-bit'          version:     '2.41.0.3'          major_version:   '2.41.0'          minor_version:   '.3'          base_url:    "https://github.com/git-for-windows/git/releases/download/v%{major_version}.windows%{minor_version}"          install_package: "Git-%{version}-%{arch}.exe"          checksum:    'D7059A66B4598384CCD7DF4556AD59A516EE99A722C0D38E5DE75C1BAD39BA6C'          install_dir:   "%{package_dir}/git"          installer_type:  'executable'          installer_arguments:            - '/VERYSILENT'            - '/NORESTART'            - '/NOCANCEL'            - '/SP-'            - '/CLOSEAPPLICATIONS'            - '/RESTARTAPPLICATIONS'            - '/COMPONENTS=icons,ext\\reg\\shellhere,assoc,assoc_sh'            - '/DIR=`"${PackageInstallDir}`"'          path:            - "%{install_dir}/bin"          validation:            "%{install_dir}/bin/git.exe" : '287359E8A1E8A016A600915E62119BB3EF927CAFFCD548B29C791329DCC1FC53'          python:          arch:            32bit: ''            64bit: '-amd64'          version:     '3.11.1'          base_url:    "https://www.python.org/ftp/python/%{version}"          install_package: "python-%{version}%{arch}.exe"          checksum:    '5BCF0CE02D6DE9EDEE44CC30287B59BBA3625089AC85F7486538BCD5D3766B37'          install_dir:   "%{package_dir}/python3"          installer_type:  'executable'          installer_arguments:            - '/quiet'            - 'PrependPath=1'            - 'Include_launcher=0'            - "TargetDir=\"%{install_dir}/python3\""          path:            - "%{install_dir}/bin"            - "%{install_dir}/scripts"          validation:            "%{install_dir}/python.exe":    '0CBF71EFA09EC4CE62D95C1448553314728ED5850720C8AD40352BFBB39BE99A'            "%{install_dir}/scripts/pip.exe": '729BD920FD0B508CD67B234DDAE628CE65514C4F8166CFA8DEF2287655B7A0BD'          paint.net:          arch:            32bit: ''            64bit: '.x84'          version:     '5.0.8'          base_url:    "https://github.com/paintdotnet/release/releases/download/v%{version}"          install_package: "paint.net.%{version}.portable%{arch}.zip"          checksum:    '5BCF0CE02D6DE9EDEE44CC30287B59BBA3625089AC85F7486538BCD5D3766B37'          install_dir:   "%{package_dir}/Paint.NET"          installer_type:  'zip'          path:            - "%{install_dir}"          validation:            "%{install_dir}/paintdotnet.exe": '09970974D57248F852CD422ED2ED02ADC1391B97CA1671D3BD80818C8FEE76CE'            </code>          </pre>
+       <pre>
+              <code>
+          project_dir:  "${env:USERPROFILE}/txfx"
+          download_dir: "%{project_dir}/downloads"
+          package_dir:  "%{project_dir}/packages"
+          
+          packages:
+            git:
+            arch:
+              32bit: '32-bit'
+              64bit: '64-bit'
+            version:     '2.41.0.3'
+            major_version:   '2.41.0'
+            minor_version:   '.3'
+            base_url:    "https://github.com/git-for-windows/git/releases/download/v%{major_version}.windows%{minor_version}"
+            install_package: "Git-%{version}-%{arch}.exe"
+            checksum:    'D7059A66B4598384CCD7DF4556AD59A516EE99A722C0D38E5DE75C1BAD39BA6C'
+            install_dir:   "%{package_dir}/git"
+            installer_type:  'executable'
+            installer_arguments:
+              - '/VERYSILENT'
+              - '/NORESTART'
+              - '/NOCANCEL'
+              - '/SP-'
+              - '/CLOSEAPPLICATIONS'
+              - '/RESTARTAPPLICATIONS'
+              - '/COMPONENTS=icons,ext\\reg\\shellhere,assoc,assoc_sh'
+              - '/DIR=`"${PackageInstallDir}`"'
+            path:
+              - "%{install_dir}/bin"
+            validation:
+              "%{install_dir}/bin/git.exe" : '287359E8A1E8A016A600915E62119BB3EF927CAFFCD548B29C791329DCC1FC53'
+            python:
+            arch:
+              32bit: ''
+              64bit: '-amd64'
+            version:     '3.11.1'
+            base_url:    "https://www.python.org/ftp/python/%{version}"
+            install_package: "python-%{version}%{arch}.exe"
+            checksum:    '5BCF0CE02D6DE9EDEE44CC30287B59BBA3625089AC85F7486538BCD5D3766B37'
+            install_dir:   "%{package_dir}/python3"
+            installer_type:  'executable'
+            installer_arguments:
+              - '/quiet'
+              - 'PrependPath=1'
+              - 'Include_launcher=0'
+              - "TargetDir=\"%{install_dir}/python3\""
+            path:
+              - "%{install_dir}/bin"
+              - "%{install_dir}/scripts"
+            validation:
+              "%{install_dir}/python.exe":    '0CBF71EFA09EC4CE62D95C1448553314728ED5850720C8AD40352BFBB39BE99A'
+              "%{install_dir}/scripts/pip.exe": '729BD920FD0B508CD67B234DDAE628CE65514C4F8166CFA8DEF2287655B7A0BD'
+            paint.net:
+            arch:
+              32bit: ''
+              64bit: '.x84'
+            version:     '5.0.8'
+            base_url:    "https://github.com/paintdotnet/release/releases/download/v%{version}"
+            install_package: "paint.net.%{version}.portable%{arch}.zip"
+            checksum:    '5BCF0CE02D6DE9EDEE44CC30287B59BBA3625089AC85F7486538BCD5D3766B37'
+            install_dir:   "%{package_dir}/Paint.NET"
+            installer_type:  'zip'
+            path:
+              - "%{install_dir}"
+            validation:
+              "%{install_dir}/paintdotnet.exe": '09970974D57248F852CD422ED2ED02ADC1391B97CA1671D3BD80818C8FEE76CE'
+              </code>
+            </pre>
       </div>
       <p>
        The changes in development not only streamline the installation process but also pave the way for greater flexibility and scalability of TxFX in managing different applications efficiently.

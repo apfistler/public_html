@@ -1,0 +1,107 @@
+/* -----------------------------------------------------------
+  Code blocks
+----------------------------------------------------------- */
+
+pre {
+  display: block;
+  box-sizing: border-box;
+
+  margin: 1.2em 2em;
+  padding: 1em 1.2em;
+
+  background-color: #263238;
+  color: #ECEFF1;
+
+  border: 1px solid #546E7A;
+  border-left: 5px solid #53006c;
+  border-radius: 6px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10pt;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.45;
+
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  white-space: pre;
+
+  word-spacing: normal;
+  letter-spacing: normal;
+  word-wrap: normal;
+  overflow-wrap: normal;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* -----------------------------------------------------------
+  Code inside a code block
+----------------------------------------------------------- */
+
+pre code {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+  color: inherit;
+
+  border: 0;
+  border-radius: 0;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  line-height: inherit;
+
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+
+  white-space: inherit;
+  word-spacing: normal;
+  letter-spacing: normal;
+  word-wrap: normal;
+  overflow-wrap: normal;
+
+  tab-size: 4;
+}
+
+/* -----------------------------------------------------------
+  Inline code
+----------------------------------------------------------- */
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  font-weight: normal;
+  font-style: normal;
+
+  padding: 0.15em 0.35em;
+
+  background-color: #D8E8F5;
+  color: #53006c;
+
+  border-radius: 3px;
+
+  text-decoration: none;
+}
+
+/* -----------------------------------------------------------
+  Mobile code blocks
+----------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  pre {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.8em;
+    font-size: 9pt;
+  }
+}
