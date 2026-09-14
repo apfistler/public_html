@@ -1,0 +1,183 @@
+.comments-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #53006c;
+    font-family: 'Kalam', sans-serif;
+    color: #004444;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.comments-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem; /* Adds breathing room below your form */
+    border-top: 2px solid #53006c;
+    border-bottom: 2px solid #53006c; /* Matches the top border */
+    font-family: 'Kalam', sans-serif;
+    color: #004444;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.comments-section h4 {
+    font-size: 18pt;
+    color: #53006c;
+    padding-top: 2px;
+    margin-bottom: 4px;
+    font-family: 'Kalam', sans-serif;
+    font-weight: normal;
+}
+
+#comment-status {
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+    background-color: #53005c;
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-family: arial, sans-serif;
+    border-radius: 4px;
+    text-align: center;
+    display: none; /* Hidden by default so it doesn't create empty space before submission */
+}
+
+#comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Change this from 1.5rem (or remove the line) to eliminate the space between comments */
+    width: 100%;
+}
+
+.comment-item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #53005c;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #53005c;
+    color: #FFFFFF;
+    padding: 0.75rem 1rem;
+    font-size: 10pt;
+    font-family: arial, sans-serif;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.comment-date {
+    color: #E0E0E0;
+    font-size: 9pt;
+}
+
+.comment-body {
+    background-color: #f3e5f5; /* Light purple */
+    color: #000000;
+    padding: 0.75rem 1rem;
+    white-space: normal; /* Changes from pre-wrap to normal, collapsing extra newlines/spaces */
+    word-break: break-word;
+    font-family: 'Kalam', sans-serif;
+}
+
+.comment-body p {
+    margin: 0; /* Removes the default browser paragraph spacing */
+    padding: 0;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto 0 auto; /* Centers the whole form block horizontally */
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.field-group label {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #007777;
+    text-decoration: underline;
+    font-family: arial, sans-serif;
+}
+
+.field-group input,
+.field-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #5C8FB5;
+    border-radius: 4px;
+    font-family: arial, sans-serif;
+    font-size: 11pt;
+    background-color: #ffffff;
+    color: #004444;
+}
+
+.field-group input:focus,
+.field-group textarea:focus {
+    outline: none;
+    border-color: #53006c;
+}
+
+#submit-comment {
+    align-self: center; /* Centers the button horizontally inside the form flex container */
+    padding: 0.6rem 1.2rem;
+    background-color: #53006c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    font-size: 11pt;
+}
+
+#submit-comment:hover {
+    background-color: #004444;
+}
+
+#submit-comment:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.no-comments, .error {
+    color: #004444;
+    font-style: italic;
+    padding-left: 1em;
+}
+
+/* Desktop sizing: use 80% of the screen real estate for the comment items */
+@media screen and (min-width: 769px) {
+    .comment-item {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    .comments-section {
+        font-size: 28px;
+    }
+    .comments-section h3 {
+        font-size: 28pt;
+    }
+    .comments-section h4 {
+        font-size: 32pt;
+    }
+}
+
+

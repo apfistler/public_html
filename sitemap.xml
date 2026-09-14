@@ -25,9 +25,6 @@
     <loc>https://adamfistler.com/adam/recovery.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/addiction/</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/addiction/addiction_faq.html</loc>
   </url>
   <url>
@@ -49,19 +46,7 @@
     <loc>https://adamfistler.com/addiction/sinclair_method.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/articles/addiction/addiction_legacy_code.html</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/articles/addiction/articles.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/articles/addiction/endorphins.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/articles/addiction/lockout.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/articles/addiction/neurochemistry.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/articles/articles.html</loc>
@@ -121,16 +106,7 @@
     <loc>https://adamfistler.com/articles/hypnosis/winning_the_battle_within.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/articles/technology/agency.html</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/articles/technology/articles.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/articles/technology/radio_shack.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/astrology/</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/astrology/astrology_faq.html</loc>
@@ -148,9 +124,6 @@
     <loc>https://adamfistler.com/contact_adam.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/graphology/</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/graphology/graphology_faq.html</loc>
   </url>
   <url>
@@ -163,9 +136,6 @@
     <loc>https://adamfistler.com/graphology/landing.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/groups/</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/groups/index.html</loc>
   </url>
   <url>
@@ -173,12 +143,6 @@
   </url>
   <url>
     <loc>https://adamfistler.com/groups/register.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/groups/resources/anger.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/groups/resources/forgiveness.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/groups/resources/meditation.html</loc>
@@ -191,9 +155,6 @@
   </url>
   <url>
     <loc>https://adamfistler.com/groups/upcoming_events.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/hypnosis/</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/hypnosis/about_hypnosis.html</loc>
@@ -232,97 +193,16 @@
     <loc>https://adamfistler.com/index.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/js/addiction_addiction_legacy_code-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/addiction_articles-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/addiction_endorphins-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/addiction_lockout-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/addiction_neurochemistry-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/articles_articles-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_10_things_choosing_a_hypnotist-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_10_things_weight_loss-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_articles-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_attract_your_ideal_partner-ld.json</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/js/hypnosis_bhc-ld.json</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/js/hypnosis_chronic_pain-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_eoc-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_evolution_of_hypnosis-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_gratitude-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_how_long_does_hypnosis_last-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_hrlrss-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_hrlrwl-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_hypnosis_myths-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_mind_body-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_nice_guy-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_stress-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_subconcious-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/hypnosis_winning_the_battle_within-ld.json</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/js/structured_data.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/technology_agency-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/technology_articles-ld.json</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/js/technology_radio_shack-ld.json</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/main/contact_adam.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/main/home.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/mindfulness/</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/mindfulness/index.html</loc>
@@ -334,9 +214,6 @@
     <loc>https://adamfistler.com/mindfulness/mindfulness_faq.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/parties/</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/parties/index.html</loc>
   </url>
   <url>
@@ -344,9 +221,6 @@
   </url>
   <url>
     <loc>https://adamfistler.com/parties/scheduling.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/technology/</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/technology/artwork.html</loc>
