@@ -10,17 +10,14 @@
     <meta content="en" http-equiv="Content-Language"/>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="/css/header.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/pratice_area.css" rel="stylesheet" type="text/css"/>
     <link href="/css/content.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/message_box.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/article.css" rel="stylesheet" type="text/css"/>
     <link href="/css/display_table.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/faq.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/form.css" rel="stylesheet" type="text/css"/>
     <link href="/css/breadcrumb.css" rel="stylesheet" type="text/css"/>
     <link href="/css/groups.css" rel="stylesheet" type="text/css"/>
     <link href="/css/code_block.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/search.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Brush+Script" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <link href="/img/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -31,11 +28,7 @@
     <meta robots="index, follow"/>
     <script src="/js/main.js" type="text/javascript">
     </script>
-    <script src="/js/practice_area.js" type="text/javascript">
-    </script>
-    <script src="/js/contact_adam.js" type="text/javascript">
-    </script>
-    <script src="/js/faq.js" type="text/javascript">
+    <script src="/js/search.js" type="text/javascript">
     </script>
     <script src="/js/structured_data.json" type="application/ld+json">
     </script>
@@ -331,16 +324,21 @@
      <header class="header">
       <div class="logo" id="logo">
        <span class="logo">
-        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.png"/>
+        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.avif"/>
        </span>
       </div>
-      <!--        <div id="address" class="address">
-            <p>Office Coming Soon</p>
-  	  <p><a href="tel:(856) 300-2690">(856) 300-2690</a></p>
-  	  <p><a href="mailto:adam@integrativets.com">adam@integrativets.com</a></p>
-  </div> -->
      </header>
      <div id="content">
+      <div class="site-search-container">
+       <div class="site-search-form">
+        <label>
+         Search:
+        </label>
+        <input autocomplete="off" class="site-search-input" id="site-search-input" placeholder="Search site content..." type="text"/>
+       </div>
+       <div class="site-search-results" id="site-search-results" style="display: none;">
+       </div>
+      </div>
       <h1>
        Outsourcing Your Agency
       </h1>
@@ -355,7 +353,7 @@
        )
       </h2>
       <div class="content-img left">
-       <img alt="Reverand Lionel Preachebot" src="/img/articles/technology/agency/preacherbot.png"/>
+       <img alt="Reverand Lionel Preachebot" src="/img/articles/technology/agency/preacherbot.avif"/>
       </div>
       <p>
        I have spent most of my life loving technology because it represented freedom.
@@ -379,7 +377,7 @@
        Rebuilding Agency
       </h2>
       <div class="content-img right">
-       <img alt="Climbing out of Addiction" src="/img/articles/technology/agency/addiction.png"/>
+       <img alt="Climbing out of Addiction" src="/img/articles/technology/agency/addiction.avif"/>
       </div>
       <p>
        My addiction began with prescription opioids. It eventually led to heroin, divorce, and homelessness. In 2020, I was living on the streets of Camden, New Jersey.
@@ -408,7 +406,7 @@
        Returning to Technology
       </h2>
       <div class="content-img oldt">
-       <img alt="Older Technology" src="/img/articles/technology/agency/old_tech.png"/>
+       <img alt="Older Technology" src="/img/articles/technology/agency/old_tech.avif"/>
       </div>
       <p>
        Technology had been one of the things I loved most since childhood.
@@ -435,7 +433,7 @@
        The answer was usually:
       </p>
       <div class="content-img right down3">
-       <img alt="Newer Technology" src="/img/articles/technology/agency/new_tech.png"/>
+       <img alt="Newer Technology" src="/img/articles/technology/agency/new_tech.avif"/>
       </div>
       <ul>
        <li>
@@ -473,7 +471,7 @@
        The Algorithm Decides What Matters
       </h2>
       <figure class="content-img caption left">
-       <img alt="Old Search" src="/img/articles/technology/agency/old_search.png"/>
+       <img alt="Old Search" src="/img/articles/technology/agency/old_search.avif"/>
        <figcaption>
         Search Results used to be More Relevant
        </figcaption>
@@ -550,7 +548,7 @@
        When Search Stops Being Search
       </h2>
       <figure class="content-img caption left">
-       <img alt="Modern Search" src="/img/articles/technology/agency/modern_search.png"/>
+       <img alt="Modern Search" src="/img/articles/technology/agency/modern_search.avif"/>
        <figcaption>
         Modern Search Engines Deliver Less Relevant and Useful Results
        </figcaption>
@@ -602,7 +600,7 @@
        The Company Decides What Is Relevant
       </h2>
       <figure class="content-img caption left">
-       <img alt="Algorithm Decides" src="/img/articles/technology/agency/algo_decides.png"/>
+       <img alt="Algorithm Decides" src="/img/articles/technology/agency/algo_decides.avif"/>
        <figcaption>
         The Algorith Decides What's Relevant to You
        </figcaption>
@@ -676,7 +674,7 @@
        Independence Is Treated as Suspicious
       </h2>
       <figure class="content-img caption left">
-       <img alt="Independence is Suspicious" src="/img/articles/technology/agency/suspicion.png"/>
+       <img alt="Independence is Suspicious" src="/img/articles/technology/agency/suspicion.avif"/>
        <figcaption>
         Hosting Private Servers is Viewed as Suspicious or Criminal
        </figcaption>
@@ -729,7 +727,7 @@
        The Customer Becomes Quality Assurance
       </h2>
       <figure class="content-img caption left">
-       <img alt="People as QA" src="/img/articles/technology/agency/people_as_qa.png"/>
+       <img alt="People as QA" src="/img/articles/technology/agency/people_as_qa.avif"/>
        <figcaption>
         End Users are Increasingly Bearing the Burden of Quality Assurance
        </figcaption>
@@ -800,7 +798,7 @@
        When AI Becomes the Architect
       </h2>
       <div class="content-img right">
-       <img alt="AI as the Architect" src="/img/articles/technology/agency/ai_architect.png"/>
+       <img alt="AI as the Architect" src="/img/articles/technology/agency/ai_architect.avif"/>
       </div>
       <p>
        Artificial intelligence introduces another version of the same problem.
@@ -839,7 +837,7 @@
        Convenience Is Not the Same as Freedom
       </h2>
       <figure class="content-img caption left">
-       <img alt="Convience is Not the Same as Feedom" src="/img/articles/technology/agency/freedom.png"/>
+       <img alt="Convience is Not the Same as Feedom" src="/img/articles/technology/agency/freedom.avif"/>
        <figcaption>
         Modern Technology Creates a Comfortable Cage
        </figcaption>
@@ -888,7 +886,7 @@
        The Platform Wants to Be Your Higher Power
       </h2>
       <div class="content-img right">
-       <img alt="Technology as a Higher Power" src="/img/articles/technology/agency/ai_higherpower.png"/>
+       <img alt="Technology as a Higher Power" src="/img/articles/technology/agency/ai_higherpower.avif"/>
       </div>
       <p>
        This is why the modern technological environment feels so unsettling to me.
@@ -1008,6 +1006,11 @@
          Outsorucing Your Agency: The Platform Wants to Be Your Higher Power
         </a>
        </p>
+       <p>
+        <a class="area_pages" href="/articles/technology/family_systems.html#technology">
+         When the Machine Becomes the Scapegoat: Applying the Family Systems Model to Corporate America
+        </a>
+       </p>
       </section>
       <nav aria-label="Breadcrumb" class="breadcrumb">
        <ol class="breadcrumb-list">
@@ -1048,6 +1051,10 @@
       </footer>
      </div>
     </main>
+    <script src="/js/flexsearch.bundle.min.js">
+    </script>
+    <script src="/js/search.js" type="text/javascript">
+    </script>
    </body>
   </html>
   

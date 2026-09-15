@@ -10,17 +10,14 @@
     <meta content="en" http-equiv="Content-Language"/>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="/css/header.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/pratice_area.css" rel="stylesheet" type="text/css"/>
     <link href="/css/content.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/message_box.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/article.css" rel="stylesheet" type="text/css"/>
     <link href="/css/display_table.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/faq.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/form.css" rel="stylesheet" type="text/css"/>
     <link href="/css/breadcrumb.css" rel="stylesheet" type="text/css"/>
     <link href="/css/groups.css" rel="stylesheet" type="text/css"/>
     <link href="/css/code_block.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/search.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Brush+Script" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <link href="/img/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -31,11 +28,7 @@
     <meta robots="index, follow"/>
     <script src="/js/main.js" type="text/javascript">
     </script>
-    <script src="/js/practice_area.js" type="text/javascript">
-    </script>
-    <script src="/js/contact_adam.js" type="text/javascript">
-    </script>
-    <script src="/js/faq.js" type="text/javascript">
+    <script src="/js/search.js" type="text/javascript">
     </script>
     <script src="/js/structured_data.json" type="application/ld+json">
     </script>
@@ -330,16 +323,21 @@
      <header class="header">
       <div class="logo" id="logo">
        <span class="logo">
-        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.png"/>
+        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.avif"/>
        </span>
       </div>
-      <!--        <div id="address" class="address">
-            <p>Office Coming Soon</p>
-  	  <p><a href="tel:(856) 300-2690">(856) 300-2690</a></p>
-  	  <p><a href="mailto:adam@integrativets.com">adam@integrativets.com</a></p>
-  </div> -->
      </header>
      <div id="content">
+      <div class="site-search-container">
+       <div class="site-search-form">
+        <label>
+         Search:
+        </label>
+        <input autocomplete="off" class="site-search-input" id="site-search-input" placeholder="Search site content..." type="text"/>
+       </div>
+       <div class="site-search-results" id="site-search-results" style="display: none;">
+       </div>
+      </div>
       <h1>
        Mindfulness
       </h1>
@@ -348,7 +346,7 @@
         Awareness, Attention &amp; the Present Moment
        </h2>
        <div class="content-img left">
-        <img alt="Meditation" src="/img/mindfulness/index/meditation.png"/>
+        <img alt="Meditation" src="/img/mindfulness/index/meditation.avif"/>
        </div>
        <p>
         Mindfulness is the practice of deliberately paying attention to what is happening in the present moment. That can include noticing your thoughts, emotions, physical sensations, surroundings, and the way you are responding to what is happening around you.
@@ -382,7 +380,7 @@
       </section>
       <section>
        <div class="content-img right">
-        <img alt="Man Thinking" src="/img/mindfulness/index/thinking_guy.png"/>
+        <img alt="Man Thinking" src="/img/mindfulness/index/thinking_guy.avif"/>
        </div>
        <h2>
         Thoughts Are Not Commands
@@ -439,7 +437,7 @@
         Mindfulness and Cravings
        </h2>
        <div class="content-img right">
-        <img alt="Cravings" src="/img/mindfulness/index/craving.png"/>
+        <img alt="Cravings" src="/img/mindfulness/index/craving.avif"/>
        </div>
        <p>
         Cravings provide a particularly useful example of mindfulness in action.
@@ -479,7 +477,7 @@
         Mindfulness Doesn't Mean You Have to Stop Thinking
        </h2>
        <div class="content-img left">
-        <img alt="Thought Cloud" src="/img/mindfulness/index/thought_cloud.png"/>
+        <img alt="Thought Cloud" src="/img/mindfulness/index/thought_cloud.avif"/>
        </div>
        <p>
         One of the most common misconceptions about mindfulness is that you are supposed to stop thinking.
@@ -552,7 +550,7 @@
         Learning to Observe Instead of Automatically React
        </h2>
        <div class="content-img right">
-        <img alt="Learning to Observe" src="/img/mindfulness/index/observe.png"/>
+        <img alt="Learning to Observe" src="/img/mindfulness/index/observe.avif"/>
        </div>
        <p>
         One of the central ideas behind my approach to mindfulness is simple: awareness creates possibilities.
@@ -594,7 +592,7 @@
         Your Practice of Mindfulness
        </h2>
        <div class="content-img left">
-        <img "="" alt="Practice Mindfulness" src="/img/mindfulness/index/woman_mindfulness.png"/>
+        <img "="" alt="Practice Mindfulness" src="/img/mindfulness/index/woman_mindfulness.avif"/>
        </div>
        <p>
         Mindfulness isn't something that has to be mastered before it becomes useful. It is a skill that develops through practice.
@@ -670,6 +668,10 @@
       </footer>
      </div>
     </main>
+    <script src="/js/flexsearch.bundle.min.js">
+    </script>
+    <script src="/js/search.js" type="text/javascript">
+    </script>
    </body>
   </html>
   

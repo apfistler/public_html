@@ -10,17 +10,14 @@
     <meta content="en" http-equiv="Content-Language"/>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="/css/header.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/pratice_area.css" rel="stylesheet" type="text/css"/>
     <link href="/css/content.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/message_box.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/article.css" rel="stylesheet" type="text/css"/>
     <link href="/css/display_table.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/faq.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/form.css" rel="stylesheet" type="text/css"/>
     <link href="/css/breadcrumb.css" rel="stylesheet" type="text/css"/>
     <link href="/css/groups.css" rel="stylesheet" type="text/css"/>
     <link href="/css/code_block.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/search.css" rel="stylesheet" type="text/css"/>
     <link href="/css/articles/articles.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Brush+Script" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet"/>
@@ -32,11 +29,7 @@
     <meta robots="index, follow"/>
     <script src="/js/main.js" type="text/javascript">
     </script>
-    <script src="/js/practice_area.js" type="text/javascript">
-    </script>
-    <script src="/js/contact_adam.js" type="text/javascript">
-    </script>
-    <script src="/js/faq.js" type="text/javascript">
+    <script src="/js/search.js" type="text/javascript">
     </script>
     <script src="/js/structured_data.json" type="application/ld+json">
     </script>
@@ -332,16 +325,21 @@
      <header class="header">
       <div class="logo" id="logo">
        <span class="logo">
-        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.png"/>
+        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.avif"/>
        </span>
       </div>
-      <!--        <div id="address" class="address">
-            <p>Office Coming Soon</p>
-  	  <p><a href="tel:(856) 300-2690">(856) 300-2690</a></p>
-  	  <p><a href="mailto:adam@integrativets.com">adam@integrativets.com</a></p>
-  </div> -->
      </header>
      <div id="content">
+      <div class="site-search-container">
+       <div class="site-search-form">
+        <label>
+         Search:
+        </label>
+        <input autocomplete="off" class="site-search-input" id="site-search-input" placeholder="Search site content..." type="text"/>
+       </div>
+       <div class="site-search-results" id="site-search-results" style="display: none;">
+       </div>
+      </div>
       <h1>
        Beyond Mesmerism: Navigating the Evolution of Hypnosis and Empowering Self-Transformation in the Modern Era
       </h1>
@@ -733,7 +731,7 @@
         The National Guild of Hypnotists (NGH) (Founded 1950)
        </h2>
        <figure class="content-img left">
-        <img alt="National Guild of Hynotists" src="/img/articles/hypnosis/evolution_of_hypnosis/ngh_logo.png"/>
+        <img alt="National Guild of Hynotists" src="/img/articles/hypnosis/evolution_of_hypnosis/ngh_logo.avif"/>
         <figcaption>
          National Guild of Hypnotists
         </figcaption>
@@ -1009,7 +1007,7 @@
        Modern Applications of Hypnosis
       </h2>
       <div class="content-img left">
-       <img alt="Pocket Watch" src="/img/articles/hypnosis/evolution_of_hypnosis/pocketwatch.png"/>
+       <img alt="Pocket Watch" src="/img/articles/hypnosis/evolution_of_hypnosis/pocketwatch.avif"/>
       </div>
       <p>
        In the early days, mesmerism's magnetic pull captivated minds, 
@@ -1035,7 +1033,7 @@
             Imagine neutralizing self-doubt, eradicating limiting beliefs, and embracing confidence and clarity.
       </p>
       <div class="content-img right">
-       <img alt="Hypnosis" src="/img/articles/hypnosis/evolution_of_hypnosis/hypnosis.png"/>
+       <img alt="Hypnosis" src="/img/articles/hypnosis/evolution_of_hypnosis/hypnosis.avif"/>
       </div>
       <p>
        Today, hypnosis helps clients rewrite their narratives, emboldening them to pursue and achieve the outcomes they desire. 
@@ -1164,7 +1162,7 @@
        Empowering Your Journey: Personal Applications of Hypnosis
       </h2>
       <div class="content-img right">
-       <img alt="Self Discovery" src="/img/articles/hypnosis/evolution_of_hypnosis/self_discovery.png"/>
+       <img alt="Self Discovery" src="/img/articles/hypnosis/evolution_of_hypnosis/self_discovery.avif"/>
       </div>
       <p>
        Hypnosis isn't merely a therapeutic technique; it's a profound exploration of your inner self, a path toward self-discovery and transformation.
@@ -1188,7 +1186,7 @@
             Those moments of daydreaming, driving on autopilot, or losing yourself in a creative pursuit? All instances of naturally occurring hypnotic states.
       </p>
       <figure class="content-img right">
-       <img alt="Overcome Anxiety and Fears" src="/img/articles/hypnosis/evolution_of_hypnosis/spider.png"/>
+       <img alt="Overcome Anxiety and Fears" src="/img/articles/hypnosis/evolution_of_hypnosis/spider.avif"/>
        <figcaption>
         Overcome Anxiety and Fears
        </figcaption>
@@ -1256,7 +1254,7 @@
        The Role of a Skilled Hypnotist: Unlocking Incredible Changes:
       </h3>
       <div class="content-img right">
-       <img alt="Hypnosis Consultation" src="/img/articles/hypnosis/evolution_of_hypnosis/consulation.png"/>
+       <img alt="Hypnosis Consultation" src="/img/articles/hypnosis/evolution_of_hypnosis/consulation.avif"/>
       </div>
       <p>
        A skilled hypnotist is your ally on this journey.
@@ -1285,7 +1283,7 @@
        Conclusion: Unleashing Your Inner Potential with Hypnosis
       </h2>
       <div class="content-img left">
-       <img alt="Embrace the Transformation" src="/img/articles/hypnosis/evolution_of_hypnosis/freedom_bird.png"/>
+       <img alt="Embrace the Transformation" src="/img/articles/hypnosis/evolution_of_hypnosis/freedom_bird.avif"/>
       </div>
       <p>
        In the tapestry of human consciousness, hypnosis emerges not as an enigma but as a natural, everyday phenomenon waiting to be explored.
@@ -1548,6 +1546,10 @@
       </p>
      </div>
     </main>
+    <script src="/js/flexsearch.bundle.min.js">
+    </script>
+    <script src="/js/search.js" type="text/javascript">
+    </script>
    </body>
   </html>
   

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Fetch and render existing comments on load
     loadComments();
 
-    // 2. Handle new comment form submission
+    // 2. Handle new top-level comment form submission
     const form = document.getElementById('comment-form');
     if (!form) return;
 
@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const payload = {
             page_key: pageKey,
+            parent_id: null,
             author_name: document.getElementById('author-name').value.trim(),
             author_email: document.getElementById('author-email').value.trim(),
             body: document.getElementById('comment-body').value.trim()
@@ -112,14 +113,30 @@ async function loadComments() {
         const response = await fetch(`/comments?page_key=${encodeURIComponent(pageKey)}`);
         if (!response.ok) return;
 
-        const comments = await response.json();
+        const allComments = await response.json();
 
-        if (comments.length === 0) {
+        if (allComments.length === 0) {
             container.innerHTML = '<p class="no-comments">No comments yet. Be the first to share your thoughts!</p>';
             return;
         }
 
-        container.innerHTML = comments.map(c => `
+        // Separate top-level comments and replies
+        const topLevel = allComments.filter(c => !c.parent_id);
+        const replies = allComments.filter(c => c.parent_id);
+
+        container.innerHTML = topLevel.map(c => {
+            const childReplies = replies.filter(r => r.parent_id === c.id);
+            return renderCommentNode(c, childReplies, isAdmin);
+        }).join('');
+    } catch (err) {
+        console.error('Failed to load comments:', err);
+        container.innerHTML = '<p class="comment-error">Could not load comments at this time.</p>';
+    }
+}
+
+function renderCommentNode(c, replies, isAdmin) {
+    return `
+        <div class="comment-thread" data-id="${c.id}">
             <div class="comment-item">
                 <div class="comment-header">
                     <span class="comment-author">${escapeHtml(c.author_name)}</span>
@@ -127,15 +144,83 @@ async function loadComments() {
                 </div>
                 <div class="comment-body">
                     <p>${escapeHtml(c.body.trim())}</p>
-                    ${isAdmin ? `<button class="delete-comment-btn" data-id="${c.id}">Delete Comment</button>` : ''}
+                    <div class="comment-actions">
+                        <button class="reply-toggle-btn" onclick="toggleReplyForm(${c.id})">Reply</button>
+                        ${isAdmin ? `<button class="delete-comment-btn" data-id="${c.id}">Delete Comment</button>` : ''}
+                    </div>
                 </div>
             </div>
-        `).join('');
-    } catch (err) {
-        console.error('Failed to load comments:', err);
-        container.innerHTML = '<p class="comment-error">Could not load comments at this time.</p>';
-    }
+
+            <div class="replies-container">
+                ${replies.map(r => `
+                    <div class="comment-item reply-item">
+                        <div class="comment-header reply-header">
+                            <span class="comment-author">${escapeHtml(r.author_name)}</span>
+                            <span class="comment-date">${formatDate(r.created_at)}</span>
+                        </div>
+                        <div class="comment-body reply-body">
+                            <p>${escapeHtml(r.body.trim())}</p>
+                            ${isAdmin ? `<div class="comment-actions"><button class="delete-comment-btn" data-id="${r.id}">Delete Comment</button></div>` : ''}
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+
+            <form class="reply-form" id="reply-form-${c.id}" style="display:none;" onsubmit="submitReply(event, ${c.id})">
+                <h5>Leave a Reply</h5>
+                <div class="field-group">
+                    <label>Name *</label>
+                    <input type="text" class="reply-name" required maxlength="50">
+                </div>
+                <div class="field-group">
+                    <label>Email (optional)</label>
+                    <input type="email" class="reply-email">
+                </div>
+                <div class="field-group">
+                    <label>Reply *</label>
+                    <textarea class="reply-body-input" rows="3" required maxlength="1000"></textarea>
+                </div>
+                <button type="submit" class="submit-reply-btn">Post Reply</button>
+            </form>
+        </div>
+    `;
 }
+
+window.toggleReplyForm = function(commentId) {
+    const form = document.getElementById(`reply-form-${commentId}`);
+    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+};
+
+window.submitReply = async function(e, parentId) {
+    e.preventDefault();
+    const form = e.target;
+    const rawPath = window.location.pathname;
+    const pageKey = btoa(rawPath);
+
+    const payload = {
+        page_key: pageKey,
+        parent_id: parentId,
+        author_name: form.querySelector('.reply-name').value.trim(),
+        author_email: form.querySelector('.reply-email').value.trim(),
+        body: form.querySelector('.reply-body-input').value.trim()
+    };
+
+    try {
+        const response = await fetch('/comments', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+            await loadComments();
+        } else {
+            alert('Could not post reply.');
+        }
+    } catch (err) {
+        console.error('Reply submission failed:', err);
+    }
+};
 
 function escapeHtml(text) {
     const div = document.createElement('div');

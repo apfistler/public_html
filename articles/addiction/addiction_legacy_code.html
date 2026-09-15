@@ -10,17 +10,14 @@
     <meta content="en" http-equiv="Content-Language"/>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="/css/header.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/pratice_area.css" rel="stylesheet" type="text/css"/>
     <link href="/css/content.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/message_box.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/article.css" rel="stylesheet" type="text/css"/>
     <link href="/css/display_table.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/faq.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/form.css" rel="stylesheet" type="text/css"/>
     <link href="/css/breadcrumb.css" rel="stylesheet" type="text/css"/>
     <link href="/css/groups.css" rel="stylesheet" type="text/css"/>
     <link href="/css/code_block.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/search.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Brush+Script" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <link href="/img/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -31,11 +28,7 @@
     <meta robots="index, follow"/>
     <script src="/js/main.js" type="text/javascript">
     </script>
-    <script src="/js/practice_area.js" type="text/javascript">
-    </script>
-    <script src="/js/contact_adam.js" type="text/javascript">
-    </script>
-    <script src="/js/faq.js" type="text/javascript">
+    <script src="/js/search.js" type="text/javascript">
     </script>
     <script src="/js/structured_data.json" type="application/ld+json">
     </script>
@@ -331,16 +324,21 @@
      <header class="header">
       <div class="logo" id="logo">
        <span class="logo">
-        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.png"/>
+        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.avif"/>
        </span>
       </div>
-      <!--        <div id="address" class="address">
-            <p>Office Coming Soon</p>
-  	  <p><a href="tel:(856) 300-2690">(856) 300-2690</a></p>
-  	  <p><a href="mailto:adam@integrativets.com">adam@integrativets.com</a></p>
-  </div> -->
      </header>
      <div id="content">
+      <div class="site-search-container">
+       <div class="site-search-form">
+        <label>
+         Search:
+        </label>
+        <input autocomplete="off" class="site-search-input" id="site-search-input" placeholder="Search site content..." type="text"/>
+       </div>
+       <div class="site-search-results" id="site-search-results" style="display: none;">
+       </div>
+      </div>
       <h1>
        Your Addiction or Unwanted Behaviors Aren’t Broken Code — They’re Legacy Code
       </h1>
@@ -352,7 +350,7 @@
        )
       </h2>
       <div class="content-img left">
-       <img alt="Addiction is Legacy Code" src="/img/articles/addiction/addiction_legacy_code/addiction_legacy_code.png"/>
+       <img alt="Addiction is Legacy Code" src="/img/articles/addiction/addiction_legacy_code/addiction_legacy_code.avif"/>
       </div>
       <p>
        When you inherit an old software system, you often encounter code that makes no obvious sense.
@@ -428,7 +426,7 @@
        The 2:47 a.m. production patch
       </h2>
       <div class="content-img right">
-       <img alt="2am Debugging Session" src="/img/articles/addiction/addiction_legacy_code/2am_debug.png"/>
+       <img alt="2am Debugging Session" src="/img/articles/addiction/addiction_legacy_code/2am_debug.avif"/>
       </div>
       <p>
        Many unwanted behaviors do not begin as obvious problems.
@@ -530,7 +528,7 @@
        When the original problem changes
       </h2>
       <div class="content-img left">
-       <img alt="Maintaining Legacy Codee" src="/img/articles/addiction/addiction_legacy_code/old_code.png"/>
+       <img alt="Maintaining Legacy Codee" src="/img/articles/addiction/addiction_legacy_code/old_code.avif"/>
       </div>
       <p>
        Legacy code often remains long after the conditions that created it have disappeared.
@@ -647,7 +645,7 @@
        Investigating the system
       </h2>
       <div class="content-img right">
-       <img alt="Investigating the System" src="/img/articles/addiction/addiction_legacy_code/invistigate_system.png"/>
+       <img alt="Investigating the System" src="/img/articles/addiction/addiction_legacy_code/invistigate_system.avif"/>
       </div>
       <p>
        A useful investigation might ask:
@@ -744,7 +742,7 @@
        You do not get a maintenance window for your life
       </h2>
       <div class="content-img right">
-       <img alt="Maintenance Window" src="/img/articles/addiction/addiction_legacy_code/maint_window.png"/>
+       <img alt="Maintenance Window" src="/img/articles/addiction/addiction_legacy_code/maint_window.avif"/>
       </div>
       <p>
        A software system can sometimes be taken offline.
@@ -794,7 +792,7 @@
        A setback may reveal:
       </p>
       <div class="content-img right">
-       <img alt="Production Setback" src="/img/articles/addiction/addiction_legacy_code/setback.png"/>
+       <img alt="Production Setback" src="/img/articles/addiction/addiction_legacy_code/setback.avif"/>
       </div>
       <ul>
        <li>
@@ -850,7 +848,7 @@
        The interface is not the whole system
       </h2>
       <div class="content-img left">
-       <img alt="System Interfacee" src="/img/articles/addiction/addiction_legacy_code/interface.png"/>
+       <img alt="System Interfacee" src="/img/articles/addiction/addiction_legacy_code/interface.avif"/>
       </div>
       <p>
        The software metaphor has limits.
@@ -892,7 +890,7 @@
        Different approaches may address different layers of the system, including:
       </p>
       <div class="content-img right down30">
-       <img alt="Toolbox" src="/img/articles/addiction/addiction_legacy_code/toolbox.png"/>
+       <img alt="Toolbox" src="/img/articles/addiction/addiction_legacy_code/toolbox.avif"/>
       </div>
       <ul>
        <li>
@@ -969,7 +967,7 @@
        It may be more useful to think of change as refactoring.
       </p>
       <div class="content-img right">
-       <img alt="Refactoring" src="/img/articles/addiction/addiction_legacy_code/refactoring.png"/>
+       <img alt="Refactoring" src="/img/articles/addiction/addiction_legacy_code/refactoring.avif"/>
       </div>
       <p>
        Refactoring means improving the structure and function of an existing system while preserving what works. It can involve:
@@ -1031,7 +1029,7 @@
        Perhaps they are running legacy software.
       </p>
       <div class="content-img left">
-       <img alt="Broken Computer" src="/img/articles/addiction/addiction_legacy_code/broken.png"/>
+       <img alt="Broken Computer" src="/img/articles/addiction/addiction_legacy_code/broken.avif"/>
       </div>
       <p>
        Some of that code is useful. Some is outdated. Some was written under difficult circumstances. Some was never documented. Some has dependencies nobody remembers. Some began as a desperate workaround.
@@ -1213,6 +1211,10 @@
       </footer>
      </div>
     </main>
+    <script src="/js/flexsearch.bundle.min.js">
+    </script>
+    <script src="/js/search.js" type="text/javascript">
+    </script>
    </body>
   </html>
   

@@ -10,17 +10,14 @@
     <meta content="en" http-equiv="Content-Language"/>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="/css/header.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/pratice_area.css" rel="stylesheet" type="text/css"/>
     <link href="/css/content.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/message_box.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/article.css" rel="stylesheet" type="text/css"/>
     <link href="/css/display_table.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/faq.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/form.css" rel="stylesheet" type="text/css"/>
     <link href="/css/breadcrumb.css" rel="stylesheet" type="text/css"/>
     <link href="/css/groups.css" rel="stylesheet" type="text/css"/>
     <link href="/css/code_block.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/search.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Brush+Script" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <link href="/img/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -31,11 +28,7 @@
     <meta robots="index, follow"/>
     <script src="/js/main.js" type="text/javascript">
     </script>
-    <script src="/js/practice_area.js" type="text/javascript">
-    </script>
-    <script src="/js/contact_adam.js" type="text/javascript">
-    </script>
-    <script src="/js/faq.js" type="text/javascript">
+    <script src="/js/search.js" type="text/javascript">
     </script>
     <script src="/js/structured_data.json" type="application/ld+json">
     </script>
@@ -331,22 +324,27 @@
      <header class="header">
       <div class="logo" id="logo">
        <span class="logo">
-        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.png"/>
+        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.avif"/>
        </span>
       </div>
-      <!--        <div id="address" class="address">
-            <p>Office Coming Soon</p>
-  	  <p><a href="tel:(856) 300-2690">(856) 300-2690</a></p>
-  	  <p><a href="mailto:adam@integrativets.com">adam@integrativets.com</a></p>
-  </div> -->
      </header>
      <div id="content">
+      <div class="site-search-container">
+       <div class="site-search-form">
+        <label>
+         Search:
+        </label>
+        <input autocomplete="off" class="site-search-input" id="site-search-input" placeholder="Search site content..." type="text"/>
+       </div>
+       <div class="site-search-results" id="site-search-results" style="display: none;">
+       </div>
+      </div>
       <article class="post-content">
        <h1 class="post-title">
         Neurotransmitters and Neurochemistry in Addiction
        </h1>
        <div class="content-img right">
-        <img alt="Neurochemistry" src="/img/articles/addiction/neurochemistry/neurochemistry.png"/>
+        <img alt="Neurochemistry" src="/img/articles/addiction/neurochemistry/neurochemistry.avif"/>
        </div>
        <p class="lead-text">
         Addiction is often explained with a single sentence: “Drugs increase dopamine.” While dopamine is important, that explanation is incomplete. Addiction involves a complex interaction among neurotransmitters, hormones, brain circuits, learning, memory, stress, pain, emotional regulation, genetics, and a person’s environment.
@@ -399,7 +397,7 @@
         Addiction Involves Brain Circuits, Not Just Chemicals
        </h2>
        <div class="content-img right">
-        <img alt="Brain Circuits" src="/img/articles/addiction/neurochemistry/brain_circuits.png"/>
+        <img alt="Brain Circuits" src="/img/articles/addiction/neurochemistry/brain_circuits.avif"/>
        </div>
        <p>
         Neurotransmitters are part of larger brain circuits. Several areas are especially important in addiction, including the reward system, the prefrontal cortex, the amygdala, the hippocampus, and stress-related networks.
@@ -417,7 +415,7 @@
         Dopamine: Reward, Motivation, and Learning
        </h2>
        <div class="content-img right">
-        <img alt="Dopamine Signaling" src="/img/articles/addiction/neurochemistry/dopamine_siginaling.png"/>
+        <img alt="Dopamine Signaling" src="/img/articles/addiction/neurochemistry/dopamine_siginaling.avif"/>
        </div>
        <p>
         Dopamine is one of the neurotransmitters most closely associated with addiction. It plays important roles in:
@@ -488,7 +486,7 @@
         Serotonin: Mood, Impulse Control, and Emotional Regulation
        </h2>
        <div class="content-img right">
-        <img alt="Serotonin System" src="/img/articles/addiction/neurochemistry/serotonin.png"/>
+        <img alt="Serotonin System" src="/img/articles/addiction/neurochemistry/serotonin.avif"/>
        </div>
        <p>
         Serotonin, also known as 5-hydroxytryptamine or 5-HT, is involved in mood, sleep, appetite, digestion, pain processing, learning, and impulse control.
@@ -506,7 +504,7 @@
         GABA: The Brain’s Main Inhibitory System
        </h2>
        <div class="content-img right">
-        <img alt="GABA System" src="/img/articles/addiction/neurochemistry/gaba.png"/>
+        <img alt="GABA System" src="/img/articles/addiction/neurochemistry/gaba.avif"/>
        </div>
        <p>
         GABA, or gamma-aminobutyric acid, is the brain’s primary inhibitory neurotransmitter. It generally reduces neural activity and helps regulate anxiety, muscle tension, relaxation, sleep, and emotional arousal.
@@ -524,7 +522,7 @@
         Glutamate: Learning, Excitation, and Cravings
        </h2>
        <div class="content-img right">
-        <img alt="Glutamate" src="/img/articles/addiction/neurochemistry/glutamate.png"/>
+        <img alt="Glutamate" src="/img/articles/addiction/neurochemistry/glutamate.avif"/>
        </div>
        <p>
         Glutamate is the brain’s primary excitatory neurotransmitter. It supports learning, memory, attention, and communication among neurons.
@@ -545,7 +543,7 @@
         Endorphins and the Endogenous Opioid System
        </h2>
        <div class="content-img right">
-        <img alt="Glutamate" src="/img/articles/addiction/neurochemistry/endorphins.png"/>
+        <img alt="Glutamate" src="/img/articles/addiction/neurochemistry/endorphins.avif"/>
        </div>
        <p>
         Endorphins are naturally occurring opioid peptides produced by the body. They help regulate pain, stress, mood, and emotional responses. Related endogenous opioid peptides include enkephalins and dynorphins.
@@ -566,7 +564,7 @@
         Norepinephrine: Alertness and the Stress Response
        </h2>
        <div class="content-img right">
-        <img alt="Norephinephrine" src="/img/articles/addiction/neurochemistry/nore.png"/>
+        <img alt="Norephinephrine" src="/img/articles/addiction/neurochemistry/nore.avif"/>
        </div>
        <p>
         Norepinephrine, also called noradrenaline, functions as both a neurotransmitter and a hormone. It helps regulate:
@@ -604,7 +602,7 @@
         Endocannabinoids: Internal Stress and Mood Regulation
        </h2>
        <div class="content-img right">
-        <img alt="Endocannabinoids" src="/img/articles/addiction/neurochemistry/endocan.png"/>
+        <img alt="Endocannabinoids" src="/img/articles/addiction/neurochemistry/endocan.avif"/>
        </div>
        <p>
         Endocannabinoids are lipid-based chemical messengers produced naturally by the body. The best-known examples are anandamide and 2-arachidonoylglycerol, or 2-AG.
@@ -622,7 +620,7 @@
         Why Substances Feel Different to Different People
        </h2>
        <figure class="content-img caption left">
-        <img alt="Paradoxical Reaction of Drug" src="/img/articles/addiction/neurochemistry/paradox.png"/>
+        <img alt="Paradoxical Reaction of Drug" src="/img/articles/addiction/neurochemistry/paradox.avif"/>
         <figcaption>
          Different Bodies, Different Responses. We all React to Drugs Uniquely.
         </figcaption>
@@ -690,7 +688,7 @@
         Psychological Dependence and the Need for Relief
        </h2>
        <div class="content-img right">
-        <img alt="Psychological Dependence" src="/img/articles/addiction/neurochemistry/dep.png"/>
+        <img alt="Psychological Dependence" src="/img/articles/addiction/neurochemistry/dep.avif"/>
        </div>
        <p>
         Psychological dependence involves relying on a substance or behavior to manage emotions, stress, pain, boredom, fear, or daily functioning. The person may believe that they cannot cope, sleep, work, socialize, or feel normal without it.
@@ -756,7 +754,7 @@
         Why Relapse Can Happen After Abstinence
        </h2>
        <div class="content-img left">
-        <img alt="Relapse" src="/img/articles/addiction/neurochemistry/relapse.png"/>
+        <img alt="Relapse" src="/img/articles/addiction/neurochemistry/relapse.avif"/>
        </div>
        <p>
         A return to substance use is often called a relapse, although many treatment approaches prefer language such as “return to use.” It may occur after exposure to a cue, a stressful event, emotional pain, overconfidence, physical discomfort, or a belief that one use will be manageable.
@@ -786,7 +784,7 @@
         Treatment and Recovery
        </h2>
        <div class="content-img left">
-        <img alt="Recovery" src="/img/articles/addiction/neurochemistry/recovery.png"/>
+        <img alt="Recovery" src="/img/articles/addiction/neurochemistry/recovery.avif"/>
        </div>
        <p>
         Because addiction involves multiple systems, effective treatment may require multiple forms of support. Depending on the substance and the individual’s circumstances, treatment may include:
@@ -1007,6 +1005,10 @@
       </footer>
      </div>
     </main>
+    <script src="/js/flexsearch.bundle.min.js">
+    </script>
+    <script src="/js/search.js" type="text/javascript">
+    </script>
    </body>
   </html>
   

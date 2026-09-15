@@ -10,17 +10,14 @@
     <meta content="en" http-equiv="Content-Language"/>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="/css/header.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/pratice_area.css" rel="stylesheet" type="text/css"/>
     <link href="/css/content.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/message_box.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/article.css" rel="stylesheet" type="text/css"/>
     <link href="/css/display_table.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/faq.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/form.css" rel="stylesheet" type="text/css"/>
     <link href="/css/breadcrumb.css" rel="stylesheet" type="text/css"/>
     <link href="/css/groups.css" rel="stylesheet" type="text/css"/>
     <link href="/css/code_block.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/search.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Brush+Script" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <link href="/img/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -31,16 +28,11 @@
     <meta robots="index, follow"/>
     <script src="/js/main.js" type="text/javascript">
     </script>
-    <script src="/js/practice_area.js" type="text/javascript">
-    </script>
-    <script src="/js/contact_adam.js" type="text/javascript">
-    </script>
-    <script src="/js/faq.js" type="text/javascript">
+    <script src="/js/search.js" type="text/javascript">
     </script>
     <script src="/js/structured_data.json" type="application/ld+json">
     </script>
-   <script src="/js/addiction_how_why-ld.json" type="application/ld+json"></script>
-</head>
+   </head>
    <body>
     <main class="main" id="main_div">
      <div id="menu_control">
@@ -331,16 +323,21 @@
      <header class="header">
       <div class="logo" id="logo">
        <span class="logo">
-        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.png"/>
+        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.avif"/>
        </span>
       </div>
-      <!--        <div id="address" class="address">
-            <p>Office Coming Soon</p>
-  	  <p><a href="tel:(856) 300-2690">(856) 300-2690</a></p>
-  	  <p><a href="mailto:adam@integrativets.com">adam@integrativets.com</a></p>
-  </div> -->
      </header>
      <div id="content">
+      <div class="site-search-container">
+       <div class="site-search-form">
+        <label>
+         Search:
+        </label>
+        <input autocomplete="off" class="site-search-input" id="site-search-input" placeholder="Search site content..." type="text"/>
+       </div>
+       <div class="site-search-results" id="site-search-results" style="display: none;">
+       </div>
+      </div>
       <h1>
        The Slow Descent
       </h1>
@@ -351,7 +348,7 @@
        The Question Behind the Story
       </h2>
       <div class="content-img left">
-       <img alt="Family Man" src="/img/addiction/how_why/family_man.png"/>
+       <img alt="Family Man" src="/img/addiction/how_why/family_man.avif"/>
       </div>
       <p>
        How can someone with a successful career, a family, intelligence, responsibilities, and—on paper—many reasons to be grateful eventually become addicted and live without stable housing in Camden, New Jersey?
@@ -363,7 +360,7 @@
        I had been a systems engineer. I had a career, a family, and an identity built around competence, responsibility, and problem-solving. Yet my life eventually moved through addiction, treatment, homelessness, and survival on the streets of Camden.
       </p>
       <div class="content-img right">
-       <img alt="Homeless" src="/img/addiction/how_why/homeless.png"/>
+       <img alt="Homeless" src="/img/addiction/how_why/homeless.avif"/>
       </div>
       <p>
        That transformation can look inexplicable from the outside. It can be tempting to divide people into two categories: responsible people and addicts, moral people and immoral people, people who make good decisions and people who do not.
@@ -413,7 +410,7 @@
        </li>
       </ul>
       <figure class="content-img caption left">
-       <img alt="Relxation" src="/img/addiction/how_why/relaxation.png"/>
+       <img alt="Relxation" src="/img/addiction/how_why/relaxation.avif"/>
        &lt;
        <figcaption>
         Addicion can Begin as an Escape from Tension and Stress
@@ -451,7 +448,7 @@
        From Pleasure to Relief
       </h2>
       <div class="content-img right">
-       <img alt="Looking for Relief" src="/img/addiction/how_why/stressed.png"/>
+       <img alt="Looking for Relief" src="/img/addiction/how_why/stressed.avif"/>
       </div>
       <p>
        Addiction often develops along two connected tracks: psychological dependence and physical dependence.
@@ -504,7 +501,7 @@
        The Body’s Warehouse Manager
       </h2>
       <figure class="content-img caption right">
-       <img alt="The Body's Warehouse" src="/img/addiction/how_why/warehouse.png"/>
+       <img alt="The Body's Warehouse" src="/img/addiction/how_why/warehouse.avif"/>
        &lt;
        <figcaption>
         Like a Warehouse Adding Capacity, the Body Creates More Receptors to Handle the Demand
@@ -535,7 +532,7 @@
        When the Survival System Is Misled
       </h2>
       <figure class="content-img caption left">
-       <img alt="Survival System" src="/img/addiction/how_why/survival.png"/>
+       <img alt="Survival System" src="/img/addiction/how_why/survival.avif"/>
        &lt;
        <figcaption>
         In Addicton The Survival System is Misled
@@ -578,7 +575,7 @@
        The Broken Thermostat of Withdrawal
       </h2>
       <div class="content-img right">
-       <img alt="Broken Thermostat" src="/img/addiction/how_why/thermo.png"/>
+       <img alt="Broken Thermostat" src="/img/addiction/how_why/thermo.avif"/>
       </div>
       <p>
        The nervous system constantly tries to maintain equilibrium. When an outside substance repeatedly pushes the system in one direction, the body may develop counter-adjustments.
@@ -626,7 +623,7 @@
        Normalization: How the Unthinkable Becomes Ordinary
       </h2>
       <div class="content-img right">
-       <img alt="Normalization" src="/img/addiction/how_why/norm.png"/>
+       <img alt="Normalization" src="/img/addiction/how_why/norm.avif"/>
       </div>
       <p>
        Normalization is the process by which something becomes familiar, expected, and accepted within a person’s everyday environment—even when it once seemed dangerous, unacceptable, or unthinkable.
@@ -670,7 +667,7 @@
        The Slow Chipping Away of Morality
       </h2>
       <div class="content-img right">
-       <img alt="Chipping Away Morality" src="/img/addiction/how_why/chip.png"/>
+       <img alt="Chipping Away Morality" src="/img/addiction/how_why/chip.avif"/>
       </div>
       <p>
        People sometimes describe addiction as if a person suddenly loses their moral compass. My experience was more gradual.
@@ -711,7 +708,7 @@
        My Descent: From Systems Engineer to Camden
       </h2>
       <div class="content-img right">
-       <img alt="House Being Held up by Scaffloding" src="/img/addiction/how_why/scaff.png"/>
+       <img alt="House Being Held up by Scaffloding" src="/img/addiction/how_why/scaff.avif"/>
       </div>
       <p>
        From the outside, a successful professional life can appear to provide protection against addiction. In reality, a career and family can conceal the early stages for a long time.
@@ -771,7 +768,7 @@
        Why I Believe Emotional Work Matters Before or Alongside Cessation
       </h2>
       <div class="content-img right">
-       <img alt="Emotional Healing" src="/img/addiction/how_why/anm.png"/>
+       <img alt="Emotional Healing" src="/img/addiction/how_why/anm.avif"/>
       </div>
       <p>
        A substance often begins as a coping mechanism before it becomes an addiction.
@@ -822,7 +819,7 @@
        How I Understand Hypnosis
       </h2>
       <div class="content-img left">
-       <img alt="Cathy Green - Hypnotist" src="/img/addiction/how_why/cathy_green_hypnotist.png"/>
+       <img alt="Cathy Green - Hypnotist" src="/img/addiction/how_why/cathy_green_hypnotist.avif"/>
       </div>
       <p>
        I do not view hypnosis as a mysterious power, mind control, or a loss of consciousness. I see it as a practical way of deliberately working with naturally occurring human processes, including focused attention, absorption, imagination, expectation, suggestion, emotion, perception, and response.
@@ -884,7 +881,7 @@
        If Traditional Treatment Has Not Worked
       </h2>
       <div class="content-img left">
-       <img alt="If Traditional Treatment Has Not Worked" src="/img/addiction/how_why/tr.png"/>
+       <img alt="If Traditional Treatment Has Not Worked" src="/img/addiction/how_why/tr.avif"/>
       </div>
       <p>
        If you have tried traditional approaches and have not succeeded, that does not automatically mean you lacked commitment, honesty, discipline, or willingness to recover. It does not mean you are constitutionally incapable of change.
@@ -953,6 +950,125 @@
       <p>
        Today, Adam combines his professional experience with the lessons of his own journey to serve clients throughout South Jersey, Philadelphia, and beyond, helping others explore the possibility of meaningful, lasting change. His approach is grounded in empathy, curiosity, practical tools, and the belief that people are more than the behaviors they are trying to overcome.
       </p>
+      <section>
+       <h2>
+        Explore my Addiction &amp; Recovery Resources
+       </h2>
+       <p>
+        <a class="area_pages" href="/main/contact_adam.html">
+         Contact Adam Fistler, BCH - Behavorial Change Consultant
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/addiction/index.html#addiction">
+         Examine an Overview of Addiction, Substance Abuse &amp; Recovery
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/addiction/how_why.html#addiction">
+         The Slow Descent: How Addiction Hijacks the Mind, Body, and Survival System
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/hypnosis/wcic.html#addiction">
+         Why the Hell Can't I Change?
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/addiction/addiction_services.html#addiction">
+         Learn more about my Addiction, Substance Abuse &amp; Recovery Services
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/hypnosis/addiction_and_recovery.html#addiction">
+         Discover how Hypnosis aids with Addiction &amp; Recovery
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/addiction/sinclair_method.html#addiction">
+         Rethinking Recovery: The Science, Stigma, and Advocacy of The Sinclair Method
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/addiction/celebrities.html#addiction">
+         Addiction Is Not a Moral Failure: Celebrities and Their Struggles with Addiction
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/addiction/addiction_faq.html#addiction">
+         Explore the Addiction, Substance Abuse &amp; Recovery FAQ
+        </a>
+       </p>
+      </section>
+      <section>
+       <h2>
+        Explore my Addiction &amp; Recovery Articles
+       </h2>
+       <p>
+        <a class="area_pages" href="/articles/addiction/articles.html#addiction">
+         Review a List of All My Addiction &amp; Recovery Articles
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/articles/addiction/neurochemistry.html#addiction">
+         Neurotransmitters and Neurochemistry in Addiction
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/articles/addiction/endorphins.html#addiction">
+         Endorphins, Pain, Mood, and Addiction: Understanding the Endogenous Opioid System
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/articles/addiction/addiction_legacy_code.html#addiction">
+         Your Addiction Isn't Broken Code - It's Legacy Code
+        </a>
+       </p>
+       <p>
+        <a class="area_pages" href="/articles/addiction/lockout.html#addiction">
+         Societal Lockout: When Rebuilding a Life Becomes One Roadblock After Another
+        </a>
+       </p>
+      </section>
+      <!-- BEGIN COMMENTS SECTION -->
+      <link href="/css/comments.css" rel="stylesheet"/>
+      <section class="comments-section" id="comments-container">
+       <h1>
+        Discussion
+       </h1>
+       <div id="comments-list">
+        <!-- Dynamically populated by comments.js -->
+       </div>
+       <form id="comment-form">
+        <h4>
+         Leave a Comment
+        </h4>
+        <div class="field-group">
+         <label for="author-name">
+          Name *
+         </label>
+         <input id="author-name" maxlength="50" required="" type="text"/>
+        </div>
+        <div class="field-group">
+         <label for="author-email">
+          Email (optional)
+         </label>
+         <input id="author-email" type="email"/>
+        </div>
+        <div class="field-group">
+         <label for="comment-body">
+          Comment *
+         </label>
+         <textarea id="comment-body" maxlength="1000" required="" rows="4"></textarea>
+        </div>
+        <button id="submit-comment" type="submit">
+         Post Comment
+        </button>
+       </form>
+      </section>
+      <script defer="" src="/js/comments.js">
+      </script>
+      <!-- END COMMENTS SECTION -->
       <nav aria-label="Breadcrumb" class="breadcrumb">
        <ol class="breadcrumb-list">
         <li class="breadcrumb-item">
@@ -992,6 +1108,10 @@
       </footer>
      </div>
     </main>
+    <script src="/js/flexsearch.bundle.min.js">
+    </script>
+    <script src="/js/search.js" type="text/javascript">
+    </script>
    </body>
   </html>
   

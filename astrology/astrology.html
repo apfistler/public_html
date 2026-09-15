@@ -10,17 +10,14 @@
     <meta content="en" http-equiv="Content-Language"/>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="/css/header.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/pratice_area.css" rel="stylesheet" type="text/css"/>
     <link href="/css/content.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/message_box.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/article.css" rel="stylesheet" type="text/css"/>
     <link href="/css/display_table.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/faq.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/form.css" rel="stylesheet" type="text/css"/>
     <link href="/css/breadcrumb.css" rel="stylesheet" type="text/css"/>
     <link href="/css/groups.css" rel="stylesheet" type="text/css"/>
     <link href="/css/code_block.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/search.css" rel="stylesheet" type="text/css"/>
     <link href="/css/astrology/astrology.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Brush+Script" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet"/>
@@ -32,11 +29,7 @@
     <meta robots="index, follow"/>
     <script src="/js/main.js" type="text/javascript">
     </script>
-    <script src="/js/practice_area.js" type="text/javascript">
-    </script>
-    <script src="/js/contact_adam.js" type="text/javascript">
-    </script>
-    <script src="/js/faq.js" type="text/javascript">
+    <script src="/js/search.js" type="text/javascript">
     </script>
     <script src="/js/structured_data.json" type="application/ld+json">
     </script>
@@ -331,21 +324,26 @@
      <header class="header">
       <div class="logo" id="logo">
        <span class="logo">
-        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.png"/>
+        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.avif"/>
        </span>
       </div>
-      <!--        <div id="address" class="address">
-            <p>Office Coming Soon</p>
-  	  <p><a href="tel:(856) 300-2690">(856) 300-2690</a></p>
-  	  <p><a href="mailto:adam@integrativets.com">adam@integrativets.com</a></p>
-  </div> -->
      </header>
      <div id="content">
+      <div class="site-search-container">
+       <div class="site-search-form">
+        <label>
+         Search:
+        </label>
+        <input autocomplete="off" class="site-search-input" id="site-search-input" placeholder="Search site content..." type="text"/>
+       </div>
+       <div class="site-search-results" id="site-search-results" style="display: none;">
+       </div>
+      </div>
       <h1>
        Unlocking the Mysteries of Astrology: Beyond Your Sun Sign
       </h1>
       <div class="content-img left">
-       <img alt="Zodiac" src="/img/astrology/astrology/zodiac.png"/>
+       <img alt="Zodiac" src="/img/astrology/astrology/zodiac.avif"/>
       </div>
       <p>
        When it comes to astrology, most people often just think of their sun sign.
@@ -356,7 +354,7 @@
        The Rise of Sun Signs: A Historical Perspective
       </h2>
       <div class="content-img right">
-       <img alt="Sun" src="/img/astrology/astrology/sun.png"/>
+       <img alt="Sun" src="/img/astrology/astrology/sun.avif"/>
       </div>
       <p>
        In the bustling era of the 1930s, astrology took an intriguing turn.
@@ -374,7 +372,7 @@
        The Sun Sign Phenomenon: An Astrological Snapshot
       </h2>
       <figure class="content-img caption left">
-       <img alt="Sun Sign" src="/img/astrology/astrology/sun_sign_symbol.png"/>
+       <img alt="Sun Sign" src="/img/astrology/astrology/sun_sign_symbol.avif"/>
        <figcaption>
         Astrological Symbol for The Sun
        </figcaption>
@@ -410,7 +408,7 @@
        Understanding Your Birth Chart: A Cosmic Blueprint
       </h2>
       <figure class="content-img caption left">
-       <img alt="Sun Sign" src="/img/astrology/astrology/birthchart.png"/>
+       <img alt="Sun Sign" src="/img/astrology/astrology/birthchart.avif"/>
        <figcaption>
         Astrological Birth Chart
        </figcaption>
@@ -954,7 +952,7 @@
        Aspects: Cosmic Connections
       </h2>
       <figure class="content-img caption right">
-       <img alt="Illistration of Astrological Aspects" src="/img/astrology/astrology/aspects.png"/>
+       <img alt="Illistration of Astrological Aspects" src="/img/astrology/astrology/aspects.avif"/>
        <figcaption>
         Illistration of Astrological Aspects
        </figcaption>
@@ -994,7 +992,7 @@
             So, the next time someone asks, "What's your sign?" you can confidently say, "I'm more than just my sun sign; I'm a cosmic masterpiece, intricately woven with the threads of the universe." Dive deeper, explore your birth chart, and unlock the wonders of your true self.
       </p>
       <div class="content-img left">
-       <img alt="Cathy Green" src="/img/astrology/astrology/cathy_green_web.png"/>
+       <img alt="Cathy Green" src="/img/astrology/astrology/cathy_green_web.avif"/>
       </div>
       <h2>
        Explore Your Unique Astrological Blueprint
@@ -1016,7 +1014,7 @@
        today to schedule your in-depth reading.
       </p>
       <div class="content-img right">
-       <img alt="Corporate Event" src="/img/astrology/astrology/corporate_event.png"/>
+       <img alt="Corporate Event" src="/img/astrology/astrology/corporate_event.avif"/>
       </div>
       <h2>
        Spice Up Your Events
@@ -1097,6 +1095,10 @@
       </footer>
      </div>
     </main>
+    <script src="/js/flexsearch.bundle.min.js">
+    </script>
+    <script src="/js/search.js" type="text/javascript">
+    </script>
    </body>
   </html>
   

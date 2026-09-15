@@ -10,17 +10,14 @@
     <meta content="en" http-equiv="Content-Language"/>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="/css/header.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/pratice_area.css" rel="stylesheet" type="text/css"/>
     <link href="/css/content.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/message_box.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/article.css" rel="stylesheet" type="text/css"/>
     <link href="/css/display_table.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/faq.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/form.css" rel="stylesheet" type="text/css"/>
     <link href="/css/breadcrumb.css" rel="stylesheet" type="text/css"/>
     <link href="/css/groups.css" rel="stylesheet" type="text/css"/>
     <link href="/css/code_block.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/search.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Brush+Script" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <link href="/img/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -31,11 +28,7 @@
     <meta robots="index, follow"/>
     <script src="/js/main.js" type="text/javascript">
     </script>
-    <script src="/js/practice_area.js" type="text/javascript">
-    </script>
-    <script src="/js/contact_adam.js" type="text/javascript">
-    </script>
-    <script src="/js/faq.js" type="text/javascript">
+    <script src="/js/search.js" type="text/javascript">
     </script>
     <script src="/js/structured_data.json" type="application/ld+json">
     </script>
@@ -331,16 +324,21 @@
      <header class="header">
       <div class="logo" id="logo">
        <span class="logo">
-        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.png"/>
+        <img alt="Adam Fistler | Mind, Meaning &amp; Transformation" border="0/" src="/img/logo.avif"/>
        </span>
       </div>
-      <!--        <div id="address" class="address">
-            <p>Office Coming Soon</p>
-  	  <p><a href="tel:(856) 300-2690">(856) 300-2690</a></p>
-  	  <p><a href="mailto:adam@integrativets.com">adam@integrativets.com</a></p>
-  </div> -->
      </header>
      <div id="content">
+      <div class="site-search-container">
+       <div class="site-search-form">
+        <label>
+         Search:
+        </label>
+        <input autocomplete="off" class="site-search-input" id="site-search-input" placeholder="Search site content..." type="text"/>
+       </div>
+       <div class="site-search-results" id="site-search-results" style="display: none;">
+       </div>
+      </div>
       <h1>
        Exploring the Longevity of Hypnosis Effects: Nurturing Lasting Change
       </h1>
@@ -348,7 +346,7 @@
        The Crucial Role of Commitment:
       </h2>
       <div class="content-img left">
-       <img alt="Commitment" src="/img/articles/hypnosis/how_long_does_hypnosis_last/conversation.png"/>
+       <img alt="Commitment" src="/img/articles/hypnosis/how_long_does_hypnosis_last/conversation.avif"/>
       </div>
       <p>
        Your commitment stands as the cornerstone of the effectiveness and persistence of hypnosis.
@@ -371,7 +369,7 @@
        The Crucial Role of Hypnotic Depth and Hypnotist Expertise:
       </h2>
       <div class="content-img right">
-       <img alt="Hypnotist" src="/img/articles/hypnosis/how_long_does_hypnosis_last/male_hypnotist_web.png"/>
+       <img alt="Hypnotist" src="/img/articles/hypnosis/how_long_does_hypnosis_last/male_hypnotist_web.avif"/>
       </div>
       <p>
        The depth of hypnosis significantly influences suggestion acceptance.
@@ -406,7 +404,7 @@
        Navigating Skepticism: Addressing Authority Figures' Doubts:
       </h2>
       <div class="content-img left">
-       <img alt="Skeptical Doctor" src="/img/articles/hypnosis/how_long_does_hypnosis_last/upset_doctor.png"/>
+       <img alt="Skeptical Doctor" src="/img/articles/hypnosis/how_long_does_hypnosis_last/upset_doctor.avif"/>
       </div>
       <p>
        Authority figures' skepticism can influence a client's perception of hypnosis.
@@ -416,7 +414,7 @@
        Crafting Effective Hypnotic Suggestions: The Key to Lasting Change:
       </h2>
       <div class="content-img right">
-       <img alt="Success With Hypnosis" src="/img/articles/hypnosis/how_long_does_hypnosis_last/victory.png"/>
+       <img alt="Success With Hypnosis" src="/img/articles/hypnosis/how_long_does_hypnosis_last/victory.avif"/>
       </div>
       <p>
        Well-phrased suggestions, rooted in the present and tailored to individual goals, are pivotal.
@@ -661,6 +659,10 @@
       </footer>
      </div>
     </main>
+    <script src="/js/flexsearch.bundle.min.js">
+    </script>
+    <script src="/js/search.js" type="text/javascript">
+    </script>
    </body>
   </html>
   

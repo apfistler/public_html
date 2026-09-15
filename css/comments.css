@@ -1,16 +1,6 @@
 .comments-section {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 2px solid #53006c;
-    font-family: 'Kalam', sans-serif;
-    color: #004444;
-    font-size: 12pt;
-    font-weight: 700;
-}
-
-.comments-section {
-    margin-top: 3rem;
-    padding-top: 2rem;
     padding-bottom: 2rem; /* Adds breathing room below your form */
     border-top: 2px solid #53006c;
     border-bottom: 2px solid #53006c; /* Matches the top border */
@@ -44,7 +34,14 @@
 #comments-list {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Change this from 1.5rem (or remove the line) to eliminate the space between comments */
+    gap: 1.5rem; /* Gap between DIFFERENT threads */
+    width: 100%;
+}
+
+.comment-thread {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* No external gap inside a thread */
     width: 100%;
 }
 
@@ -57,6 +54,21 @@
     border: 1px solid #53005c;
 }
 
+.replies-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Zero gap between replies */
+    margin-left: 2rem; /* Indents replies to show hierarchy */
+    width: calc(100% - 2rem);
+    border-top: none;
+}
+
+.reply-item {
+    width: 100%;
+    border-radius: 0;
+    border-top: none;
+}
+
 .comment-header {
     display: flex;
     justify-content: space-between;
@@ -66,6 +78,11 @@
     padding: 0.75rem 1rem;
     font-size: 10pt;
     font-family: arial, sans-serif;
+}
+
+.reply-header {
+    background-color: #26428b !important; /* Dark cornflower blue 2 */
+    color: #FFFFFF !important;
 }
 
 .comment-author {
@@ -88,9 +105,65 @@
     font-family: 'Kalam', sans-serif;
 }
 
+.reply-body {
+    background-color: #f0f8ff !important; /* Light blue 3 */
+    color: #000000 !important;
+    border: 1px solid #002244;
+    border-top: none;
+}
+
 .comment-body p {
     margin: 0; /* Removes the default browser paragraph spacing */
     padding: 0;
+}
+
+.comment-actions {
+    margin-top: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.reply-toggle-btn {
+    padding: 0.3rem 0.6rem;
+    background-color: #53006c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    font-size: 9pt;
+}
+
+.reply-toggle-btn:hover {
+    background-color: #004444;
+}
+
+.delete-comment-btn {
+    padding: 0.3rem 0.6rem;
+    background-color: #a80000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    font-size: 9pt;
+}
+
+.delete-comment-btn:hover {
+    background-color: #660000;
+}
+
+.reply-form {
+    margin-left: 2rem;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px dashed #002244;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
 }
 
 #comment-form {
@@ -133,7 +206,7 @@
     border-color: #53006c;
 }
 
-#submit-comment {
+#submit-comment, .submit-reply-btn {
     align-self: center; /* Centers the button horizontally inside the form flex container */
     padding: 0.6rem 1.2rem;
     background-color: #53006c;
@@ -146,7 +219,7 @@
     font-size: 11pt;
 }
 
-#submit-comment:hover {
+#submit-comment:hover, .submit-reply-btn:hover {
     background-color: #004444;
 }
 
@@ -161,13 +234,32 @@
     padding-left: 1em;
 }
 
-/* Desktop sizing: use 80% of the screen real estate for the comment items */
+/* Desktop sizing: lock widths so elements match the parent comment span */
+/* Desktop sizing: lock widths so elements match the parent comment span and center properly */
 @media screen and (min-width: 769px) {
     .comment-item {
         width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .replies-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .reply-item {
+        width: 100%; 
+    }
+
+    .reply-form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
     }
 }
-
 @media screen and (min-width: 769px) and (max-width: 1280px) {
     .comments-section {
         font-size: 28px;
@@ -179,5 +271,3 @@
         font-size: 32pt;
     }
 }
-
-
