@@ -4,9 +4,6 @@
     <loc>https://adamfistler.com/</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/adam/</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/adam/addiction_development.html</loc>
   </url>
   <url>
@@ -14,9 +11,6 @@
   </url>
   <url>
     <loc>https://adamfistler.com/adam/index.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/adam/landing.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/adam/reclaim.html</loc>
@@ -40,13 +34,22 @@
     <loc>https://adamfistler.com/addiction/index.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/addiction/landing.html</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/addiction/sinclair_method.html</loc>
   </url>
   <url>
+    <loc>https://adamfistler.com/articles/addiction/addiction_legacy_code.html</loc>
+  </url>
+  <url>
     <loc>https://adamfistler.com/articles/addiction/articles.html</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/articles/addiction/endorphins.html</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/articles/addiction/lockout.html</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/articles/addiction/neurochemistry.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/articles/articles.html</loc>
@@ -118,9 +121,6 @@
     <loc>https://adamfistler.com/astrology/index.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/astrology/landing.html</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/contact_adam.html</loc>
   </url>
   <url>
@@ -133,13 +133,7 @@
     <loc>https://adamfistler.com/graphology/index.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/graphology/landing.html</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/groups/index.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/groups/landing.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/groups/register.html</loc>
@@ -175,9 +169,6 @@
     <loc>https://adamfistler.com/hypnosis/index.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/hypnosis/landing.html</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/hypnosis/smoking_cessation.html</loc>
   </url>
   <url>
@@ -190,7 +181,376 @@
     <loc>https://adamfistler.com/hypnosis/weight_loss.html</loc>
   </url>
   <url>
+    <loc>https://adamfistler.com/img/adam/addiction_development/anm.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/addiction_development/anmm.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/addiction_development/front_door.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/addiction_development/hide.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/addiction_development/kitchen.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/addiction_development/mnm.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/addiction_development/pills.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/addiction_development/res.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/cathy_green_hypnotist.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/cgt.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/gdo.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/no_connection.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/search.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/social_signals.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/tm.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/trapped.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/trapped_child_bubble.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/early_childhood/wugb.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/reclaim/hypnosis.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/reclaim/ladder.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/reclaim/leave.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/reclaim/present.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/reclaim/rehab_hypnosis.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/reclaim/revdoor.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/cg_hi.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/drop_tools.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/family_man.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/focus.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/homeless.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/hypnosis.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/letgo.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/libdev.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/mgt.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/research.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/revdoor.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/sad.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/adam/recovery/treatment.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/addiction_services/addict.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/addiction_services/breaking_chains.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/addiction_services/broken_steps_drawing.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/addiction_services/deceptive_claims.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/addiction_services/lightbulb.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/addiction_services/male_hypnotist_web.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/addiction_services/revolving_door.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/celebrities/addiction.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/celebrities/babylon_5_logo.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/anm.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/cathy_green_hypnotist.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/chip.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/family_man.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/homeless.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/norm.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/relaxation.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/scaff.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/stressed.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/survival.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/thermo.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/tr.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/addiction/how_why/warehouse.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/articles/hypnosis/bhc/adam_fistler_transparent_web.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/articles/hypnosis/bhc/bhc_logo.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/articles/hypnosis/bhc/gbp.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/articles/hypnosis/bhc/hypnosis_consultation.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/articles/hypnosis/bhc/hypnosis_office.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/articles/hypnosis/bhc/hypnosis_recliner.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/articles/hypnosis/bhc/reception_area.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/articles/hypnosis/bhc/waiting_area.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/anti_will_power.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/cathy_hypnosis_web.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/hypnosis.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/male_hypnotist_web.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/old_habits_change.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/pocketwatch.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/question_mark.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/running.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/smushed_cigarette.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/about_hypnosis/tv_with_static.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/anger/calm.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/anger/snapped_pencil.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/hypnosis_services/hypnosis.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/hypnosis_services/hypnosis_session.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/hypnosis_services/hypnosis_works.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/hypnosis_services/question_mark.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/smoking_cessation/smushed_cigarette.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/behavior.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/beliefs.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/brain.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/broken_toy.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/cathy_green_hypnotist.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/critical_factor.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/ep.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/know_vs_act.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/mental_wall.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/solution.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/suppression.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/wcic/web_of_addiction.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/hypnosis/weight_loss/bathroom_scale.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/logo.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/5_path_charter_member.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/adam_fistler_transparent_web.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/addiction_ball.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/atari_800xl.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/cathy_hypnosis_left_web.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/cathy_hypnotist_web.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/cursive_sample.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/distorted_crt.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/html_code.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/html_css_javascript_logo.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/hypnotic_daze.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/laughter.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/magnifying_glass.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/ngh_logo.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/smart_recovery_logo.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/technology_logos.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/the_c_programming_language.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/main/home/zodiac.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/mindfulness/index/craving.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/mindfulness/index/meditation.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/mindfulness/index/observe.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/mindfulness/index/thinking_guy.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/mindfulness/index/thought_cloud.avif</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/img/mindfulness/index/woman_mindfulness.avif</loc>
+  </url>
+  <url>
     <loc>https://adamfistler.com/index.html</loc>
+  </url>
+  <url>
+    <loc>https://adamfistler.com/js/hypnosis_articles-ld.json</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/js/hypnosis_bhc-ld.json</loc>
@@ -202,22 +562,13 @@
     <loc>https://adamfistler.com/main/contact_adam.html</loc>
   </url>
   <url>
-    <loc>https://adamfistler.com/main/home.html</loc>
-  </url>
-  <url>
     <loc>https://adamfistler.com/mindfulness/index.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/mindfulness/landing.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/mindfulness/mindfulness_faq.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/parties/index.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/parties/landing.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/parties/scheduling.html</loc>
@@ -227,9 +578,6 @@
   </url>
   <url>
     <loc>https://adamfistler.com/technology/index.html</loc>
-  </url>
-  <url>
-    <loc>https://adamfistler.com/technology/landing.html</loc>
   </url>
   <url>
     <loc>https://adamfistler.com/technology/projects.html</loc>
